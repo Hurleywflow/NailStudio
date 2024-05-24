@@ -27,7 +27,7 @@ function Hero(): JSX.Element {
 					</div>
 				</MotionDiv> */}
 				<div className='mx-auto flex size-full flex-col items-start justify-end overflow-hidden'>
-					<div className='relative aspect-square w-[98%] md:size-full '>
+					<div className='relative aspect-[3/4] h-[90%] md:size-full '>
 						<Suspense
 							fallback={
 								<div className='flex size-full flex-col items-center justify-center space-y-3 bg-background'>

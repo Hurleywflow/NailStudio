@@ -15,7 +15,7 @@ const TextGenerateEffectDemo = (): JSX.Element => {
 
 	return (
 		<div ref={ref}>
-			{isInView && <TextGenerateEffectMemo words={words} className='' />}
+			{isInView && <TextGenerateEffectMemo words={words} className='h-fit' />}
 		</div>
 	);
 };
