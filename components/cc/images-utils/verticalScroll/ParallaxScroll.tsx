@@ -46,7 +46,7 @@ const ParallaxScroll = ({
 	return (
 		<div
 			className={cn(
-				"h-[50rem] relative items-start overflow-y-auto w-full",
+				"h-[40rem] relative items-start overflow-y-auto w-full",
 				className,
 			)}
 			ref={gridRef}

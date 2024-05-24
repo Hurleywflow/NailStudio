@@ -69,7 +69,7 @@ const Home = (): JSX.Element => {
 					</Suspense>
 				</div>
 				{/* Intro */}
-				<div className='my-10 flex h-screen w-full items-center justify-center px-10 md:h-80 lg:max-w-screen-lg'>
+				<div className='my-10 flex h-svh w-full items-center justify-center px-10 md:h-80 lg:max-w-screen-lg'>
 					<Suspense fallback={<Loading className='h-fit' />}>
 						<TextGenerateEffectDemo />
 					</Suspense>
