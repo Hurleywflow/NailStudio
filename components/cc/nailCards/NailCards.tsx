@@ -52,7 +52,7 @@ const NailCards = (): JSX.Element => {
 				api.scrollNext();
 				setCurrent(current + 1);
 			}
-		}, 6000);
+		}, 3000);
 	}, [api, current]);
 	return (
 		<div className='relative w-full max-w-screen-2xl'>

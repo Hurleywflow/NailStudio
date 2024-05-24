@@ -34,10 +34,7 @@ export const metadata: Metadata = {
 	],
 	creator: "Hurley Nguyen",
 	publisher: "Hurley Nguyen",
-	title: "Nail Salon Gadsden || Nail Studio",
-	description:
-		"Nail Studio offers a range of services for a relaxing manicure and pedicure experience. Whether you want to relax in our tranquil atmosphere. Our capable team is here to cater to your needs.",
-	metadataBase: new URL("https://www.nailstudiopro.com"),
+
 	keywords: [
 		"nail salon gadsden",
 		"nail salon gadsden al",
@@ -103,33 +100,36 @@ export const metadata: Metadata = {
 			"application/rss+xml": "https://www.nailstudiopro.com/rss",
 		},
 	},
-	openGraph: {
-		title: "Nail Salon Gadsden || Nail Studio",
-		description:
-			"Nail Studio offers a range of services for a relaxing manicure and pedicure experience. Whether you want to relax in our tranquil atmosphere. Our capable team is here to cater to your needs.",
-		type: "website",
-		url: "https://www.nailstudiopro.com",
-		siteName: "NetCode",
-		images: [
-			{
-				url: "",
-				width: 1200,
-				height: 630,
-			},
-		],
-	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Nail Salon Gadsden || Nail Studio",
-		description:
-			"Nail Studio offers a range of services for a relaxing manicure and pedicure experience. Whether you want to relax in our tranquil atmosphere. Our capable team is here to cater to your needs.",
-		images: {
-			url: "",
-			width: 1200,
-			height: 630,
-		},
-	},
-};
+  title: 'Nail Salon Gadsden || Nail Studio',
+  description: 'Nail Studio offers a range of services for a relaxing manicure and pedicure experience. Our capable team is here to cater to your needs.',
+	metadataBase: new URL("https://www.nailstudiopro.com"),
+  openGraph: {
+    title: 'Nail Salon Gadsden || Nail Studio',
+    description: 'Nail Studio offers a range of services for a relaxing manicure and pedicure experience. Our capable team is here to cater to your needs.',
+    type: 'website',
+    url: 'https://www.nailstudiopro.com',
+    siteName: 'Nail Salon Gadsden',
+    images: [
+      {
+        url: '',
+        width: 1200,
+        height: 630,
+      },
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Nail Salon Gadsden || Nail Studio',
+    description: 'Nail Studio offers a range of services for a relaxing manicure and pedicure experience. Our capable team is here to cater to your needs.',
+    images: [
+      {
+        url: '',
+        width: 1200,
+        height: 630,
+      },
+    ]
+  }
+}
 const RootLayout = ({
 	children,
 }: Readonly<{

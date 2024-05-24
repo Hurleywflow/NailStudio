@@ -27,7 +27,7 @@ function Hero(): JSX.Element {
 					</div>
 				</MotionDiv> */}
 				<div className='mx-auto flex size-full flex-col items-start justify-end overflow-hidden'>
-					<div className='relative size-full '>
+					<div className='relative aspect-square w-[98%] md:size-full '>
 						<Suspense
 							fallback={
 								<div className='flex size-full flex-col items-center justify-center space-y-3 bg-background'>
@@ -36,15 +36,12 @@ function Hero(): JSX.Element {
 										<Skeleton className='h-4 w-3/5' />
 										<Skeleton className='h-4 w-3/5' />
 									</div>
-									{/* <p className='text-center text-2xl text-tertiary-primary tracking-wider animate-pulse '>
-																Loading...
-															</p> */}
 								</div>
 							}
 						>
 							<LoadingImage
 								src='/Images/hero/hero.png'
-								className='mb-4 size-full  object-cover object-center hover:scale-100 '
+								className='size-full  object-cover object-center hover:scale-100 '
 								alt='hero'
 								sizes='(max-width: 430px) 420px,(max-width: 640px) 620px, (max-width: 768px) 740px, (max-width: 1024px) 1000px, 1280px'
 							/>

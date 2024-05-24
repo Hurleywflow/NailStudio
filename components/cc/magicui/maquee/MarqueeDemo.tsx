@@ -110,8 +110,8 @@ const MarqueeDemo = (): JSX.Element => {
 					<ReviewCard key={review.id} {...review} />
 				))}
 			</Marquee>
-			<div className='pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background' />
-			<div className='pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background' />
+			<div className='pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-background md:w-1/4' />
+			<div className='pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-background md:w-1/4' />
 		</div>
 	);
 };

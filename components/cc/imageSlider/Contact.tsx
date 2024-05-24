@@ -24,7 +24,7 @@ function Contact(): JSX.Element {
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{
 						delay: 0.3,
-						duration: 0.9,
+						duration: 0.5,
 						ease: "easeInOut",
 					}}
 					className='z-20 flex flex-col items-center justify-center gap-10'

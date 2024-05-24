@@ -32,7 +32,7 @@ const IMAGES_DATA: CardType[] = [
 
 function Pedicure(): JSX.Element {
 	return (
-		<div className='flex flex-col items-center'>
+		<div className='flex h-fit w-full flex-col items-center'>
 			<MotionDiv
 				className='mb-20 mt-10  flex w-[90%] max-w-screen-lg  flex-col items-center justify-center gap-2 text-base font-normal '
 				initial={{ opacity: 0.3, y: 50 }}

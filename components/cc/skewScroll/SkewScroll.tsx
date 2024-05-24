@@ -111,7 +111,7 @@ function SkewScroll(): JSX.Element {
 		{ id: 106, src: "/Images/pedicure/18.webp" },
 	];
 	return (
-		<div className='flex aspect-video w-full items-center  justify-center '>
+		<div className='flex aspect-square w-full items-center justify-center  md:aspect-video '>
 			<div className='relative size-full overflow-hidden bg-background'>
 				{/* <!-- For some reason the white vignette effect don't work in this sandbox but if you uncomment the following lines in VSCode, they should work --> */}
 				<div className='pointer-events-none absolute -top-1 z-10 h-20 w-full bg-gradient-to-b from-background to-transparent' />

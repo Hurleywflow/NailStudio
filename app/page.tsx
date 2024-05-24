@@ -74,47 +74,45 @@ const Home = (): JSX.Element => {
 						<TextGenerateEffectDemo />
 					</Suspense>
 				</div>
-				<div className='relative mt-20 w-full '>
-					{/* Manicure */}
-					<div className='sticky top-0 flex h-fit  w-full flex-col items-center justify-center overflow-hidden'>
-						<div
-							className='absolute inset-0 -z-10 size-full bg-neutral-50 bg-[linear-gradient(to_right,#d1d5db_1px,transparent_1px),linear-gradient(to_bottom,#d1d5db_1px,transparent_1px)] bg-[size:6rem_4rem] dark:bg-neutral-950'
-							id='manicure'
-						>
-							<div className='absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#9e83e2,transparent)]' />
-						</div>
-						<Suspense fallback={<Loading className='h-fit min-h-screen' />}>
-							<Manicure />
-						</Suspense>
+				{/* Manicure */}
+				<div className='relative flex h-fit  w-full flex-col items-center justify-center overflow-hidden'>
+					<div
+						className='absolute inset-0 -z-10 bg-background bg-[linear-gradient(to_right,#d1d5db_1px,transparent_1px),linear-gradient(to_bottom,#d1d5db_1px,transparent_1px)] bg-[size:6rem_4rem] dark:bg-neutral-950'
+						id='manicure'
+					>
+						<div className='absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#9e83e2,transparent)]' />
 					</div>
-					{/* Pedicure */}
-					<div className='sticky top-0 flex h-fit  w-full flex-col items-center justify-center overflow-hidden bg-neutral-50 bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))] dark:bg-black'>
-						<div
-							className='absolute bottom-0 left-[-20%] right-0 top-[-10%] size-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]'
-							id='pedicure'
-						/>
-						<div className='absolute bottom-0 right-[-20%] top-[-10%] size-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]' />
-						<Suspense fallback={<Loading className='h-fit min-h-screen' />}>
-							<Pedicure />
-						</Suspense>
+					<Suspense fallback={<Loading className='h-fit' />}>
+						<Manicure />
+					</Suspense>
+				</div>
+				{/* Pedicure */}
+				<div className='relative flex h-fit  w-full flex-col items-center justify-center overflow-hidden bg-background bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))] dark:bg-black'>
+					<div
+						className='absolute bottom-0 left-[-20%] right-0 top-[-10%] size-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]'
+						id='pedicure'
+					/>
+					<div className='absolute bottom-0 right-[-20%] top-[-10%] size-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]' />
+					<Suspense fallback={<Loading className='h-fit' />}>
+						<Pedicure />
+					</Suspense>
+				</div>
+				{/* Nail Art */}
+				<div className='relative flex h-fit  w-full flex-col items-center justify-center overflow-hidden '>
+					<div
+						className='absolute inset-0 -z-10 size-full bg-background bg-[linear-gradient(to_right,#d1d5db_1px,transparent_1px),linear-gradient(to_bottom,#d1d5db_1px,transparent_1px)] bg-[size:6rem_4rem] dark:bg-slate-950'
+						id='nail-art'
+					>
+						<div className='absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#7eaeca,transparent)]' />
 					</div>
-					{/* Nail Art */}
-					<div className='sticky top-0 flex h-fit  w-full flex-col items-center justify-center overflow-hidden '>
-						<div
-							className='absolute inset-0 -z-10 size-full bg-neutral-50 bg-[linear-gradient(to_right,#d1d5db_1px,transparent_1px),linear-gradient(to_bottom,#d1d5db_1px,transparent_1px)] bg-[size:6rem_4rem] dark:bg-slate-950'
-							id='nail-art'
-						>
-							<div className='absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#7eaeca,transparent)]' />
-						</div>
-						<Suspense fallback={<Loading className='h-fit min-h-screen' />}>
-							<NailArt />
-						</Suspense>
-					</div>
+					<Suspense fallback={<Loading className='h-fit' />}>
+						<NailArt />
+					</Suspense>
 				</div>
 				{/* Royalty Customer */}
 				<div className='mt-20 flex h-fit w-full flex-col items-center justify-center'>
 					<Suspense fallback={<Loading className='h-fit' />}>
-						<TitleHeadSection>Our customers are delighted</TitleHeadSection>
+						<TitleHeadSection>Delighted Customers</TitleHeadSection>
 						<RoyaltyCustomerMemo />
 					</Suspense>
 				</div>
@@ -122,7 +120,7 @@ const Home = (): JSX.Element => {
 				<div className='mt-20 flex h-fit w-full flex-col items-center justify-center'>
 					<Suspense fallback={<Loading className='h-fit' />}>
 						<TitleHeadSection>
-							Receive trustworthy and positive customer feedback
+							Receive Trustworthy And Positive Customer's Feedback
 						</TitleHeadSection>
 					</Suspense>
 					<Suspense fallback={<Loading className='h-fit' />}>
