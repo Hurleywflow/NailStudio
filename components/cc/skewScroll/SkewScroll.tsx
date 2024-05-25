@@ -142,9 +142,9 @@ function SkewScroll(): JSX.Element {
 									>
 										<LoadingImage
 											src={img.src}
-											className='size-full object-cover'
+											className='size-full object-cover object-center'
 											alt='Carousel image'
-											sizes='(max-width: 1024px) 737px, 737px'
+											sizes='(max-width:320px) 150px, (max-width:375px) 175px, (max-width:480px) 240px, (max-width:640px) 300px, (max-width:768px) 230px, 150px'
 										/>
 									</Suspense>
 									{/* <Image

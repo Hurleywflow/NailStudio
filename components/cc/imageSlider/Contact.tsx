@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Suspense } from "react";
 import TitleHeadSection from "../infinite-moving-cards/TitleHeadSection";
+import { BorderBeam } from "../magicui/boderBeam/BorderBeam";
+import AnimatedShinyText from "../magicui/skinyText/AnimatedShinyText";
 import { ImagesSlider } from "./ImagesSlider";
 
 function Contact(): JSX.Element {
@@ -16,8 +18,11 @@ function Contact(): JSX.Element {
 		// "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 	];
 	return (
-		<div className='flex h-fit w-full flex-col items-center justify-center'>
-			<TitleHeadSection>Contact</TitleHeadSection>
+		<div className=' flex h-fit w-full flex-col items-center justify-center'>
+			<TitleHeadSection className='relative'>
+				Contact
+				<BorderBeam size={250} duration={12} delay={9} />
+			</TitleHeadSection>
 			<ImagesSlider className='h-80 rounded-md md:h-[25rem]' images={images}>
 				<motion.div
 					initial={{ opacity: 0.3, y: 50 }}
@@ -37,7 +42,10 @@ function Contact(): JSX.Element {
 					</H6>
 					<Link href='tel:+12565462553'>
 						<ShimmerButton className='text-center text-2xl font-bold md:text-6xl'>
-							Book now
+							<AnimatedShinyText className='inline-flex items-center justify-center px-4 py-1 transition ease-out  hover:duration-300 '>
+								<span>✨ Book Now</span>
+								{/* <ArrowRight className='ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5' /> */}
+							</AnimatedShinyText>
 						</ShimmerButton>
 					</Link>
 				</motion.div>

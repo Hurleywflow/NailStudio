@@ -54,7 +54,7 @@ const ParallaxScroll = ({
 			{/* <div className='pointer-events-none sticky -top-1 z-10 h-20 w-full bg-gradient-to-b from-background to-transparent' /> */}
 
 			<div
-				className='mx-auto grid w-full grid-cols-10  items-start gap-1 px-1 py-10 md:gap-5 md:px-10 md:py-40'
+				className='mx-auto grid w-full grid-cols-10  items-start gap-1 px-1 py-2 md:gap-5 md:px-10'
 				ref={gridRef}
 			>
 				<div className='col-span-4 grid gap-1 md:col-span-3 md:gap-5'>

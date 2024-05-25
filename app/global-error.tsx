@@ -30,7 +30,6 @@ export default function GlobalError({
 								helpful links:
 							</p>
 							<div className='mt-6 flex items-center gap-x-3'>
-								{/* biome-ignore lint/a11y/useButtonType: <explanation> */}
 								<button
 									className='flex w-1/2 items-center justify-center gap-x-2 rounded-lg border bg-white px-5 py-2 text-sm text-gray-700 transition-colors duration-200 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-gray-800 sm:w-auto'
 									type='button'
@@ -50,7 +49,6 @@ export default function GlobalError({
 											d='M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18'
 										/>
 									</svg>
-									{/* biome-ignore lint/a11y/useButtonType: <explanation> */}
 									<button
 										type='button'
 										onClick={() => {
@@ -60,7 +58,6 @@ export default function GlobalError({
 										Reset
 									</button>
 								</button>
-								{/* biome-ignore lint/a11y/useButtonType: <explanation> */}
 								<button
 									type='button'
 									onClick={() => {

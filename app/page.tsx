@@ -39,27 +39,27 @@ const Home = (): JSX.Element => {
 					className='flex h-fit min-h-screen w-full items-center justify-center'
 					id='home'
 				>
-					<Suspense fallback={<Loading className='h-fit min-h-screen' />}>
+					<Suspense fallback={<Loading className='' />}>
 						<Hero />
 					</Suspense>
 				</div>
 				{/* NailCards: Manicure, Pedicure, art */}
 				<div className='mt-20 flex h-fit w-full flex-col items-center justify-center gap-10 overflow-hidden'>
-					<Suspense fallback={<Loading className='h-fit min-h-screen' />}>
+					<Suspense fallback={<Loading className='' />}>
 						<TitleHeadSection>Our Service Category</TitleHeadSection>
 						<NailCardsMemo />
 					</Suspense>
 				</div>
 				{/* OUr Service Gallery */}
 				<div className='mt-20 flex h-fit w-full flex-col items-center justify-center gap-10'>
-					<Suspense fallback={<Loading className='h-fit' />}>
+					<Suspense fallback={<Loading className='' />}>
 						<TitleHeadSection>Our Service Gallery</TitleHeadSection>
 						<SkewScrollMemo />
 					</Suspense>
 				</div>
 				{/* NailStudio title */}
 				<div className='mt-20 flex h-fit w-full items-center justify-center'>
-					<Suspense fallback={<Loading className='h-fit' />}>
+					<Suspense fallback={<Loading className='' />}>
 						<AnimatedTextMemo
 							el='span'
 							text={["NailStudio"]}
@@ -70,7 +70,7 @@ const Home = (): JSX.Element => {
 				</div>
 				{/* Intro */}
 				<div className='my-10 flex h-svh w-full items-center justify-center px-10 md:h-80 lg:max-w-screen-lg'>
-					<Suspense fallback={<Loading className='h-fit' />}>
+					<Suspense fallback={<Loading className='' />}>
 						<TextGenerateEffectDemo />
 					</Suspense>
 				</div>
@@ -82,7 +82,7 @@ const Home = (): JSX.Element => {
 					>
 						<div className='absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#9e83e2,transparent)]' />
 					</div>
-					<Suspense fallback={<Loading className='h-fit' />}>
+					<Suspense fallback={<Loading className='' />}>
 						<Manicure />
 					</Suspense>
 				</div>
@@ -93,7 +93,7 @@ const Home = (): JSX.Element => {
 						id='pedicure'
 					/>
 					<div className='absolute bottom-0 right-[-20%] top-[-10%] size-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]' />
-					<Suspense fallback={<Loading className='h-fit' />}>
+					<Suspense fallback={<Loading className='' />}>
 						<Pedicure />
 					</Suspense>
 				</div>
@@ -105,31 +105,31 @@ const Home = (): JSX.Element => {
 					>
 						<div className='absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#7eaeca,transparent)]' />
 					</div>
-					<Suspense fallback={<Loading className='h-fit' />}>
+					<Suspense fallback={<Loading className='' />}>
 						<NailArt />
 					</Suspense>
 				</div>
 				{/* Royalty Customer */}
 				<div className='mt-20 flex h-fit w-full flex-col items-center justify-center'>
-					<Suspense fallback={<Loading className='h-fit' />}>
+					<Suspense fallback={<Loading className='' />}>
 						<TitleHeadSection>Delighted Customers</TitleHeadSection>
 						<RoyaltyCustomerMemo />
 					</Suspense>
 				</div>
 				{/* Customer Feedback */}
 				<div className='mt-20 flex h-fit w-full flex-col items-center justify-center'>
-					<Suspense fallback={<Loading className='h-fit' />}>
+					<Suspense fallback={<Loading className='' />}>
 						<TitleHeadSection>
 							Receive Trustworthy And Positive Customer's Feedback
 						</TitleHeadSection>
 					</Suspense>
-					<Suspense fallback={<Loading className='h-fit' />}>
+					<Suspense fallback={<Loading className='' />}>
 						<MarqueeDemo />
 					</Suspense>
 				</div>
 				{/* Contact */}
 				<div className='mt-20 h-fit w-full' id='contact'>
-					<Suspense fallback={<Loading className='h-fit' />}>
+					<Suspense fallback={<Loading className='' />}>
 						<Contact />
 					</Suspense>
 				</div>
