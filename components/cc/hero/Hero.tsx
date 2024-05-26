@@ -7,7 +7,7 @@ import { AuroraBackground } from "./AuroraBackground";
 
 function Hero(): JSX.Element {
 	return (
-		<div className='w-full'>
+		<div className='w-full h-[100vh]'>
 			<AuroraBackground>
 				{/* <MotionDiv
 					initial={{ opacity: 0.0, y: 40 }}
@@ -27,7 +27,7 @@ function Hero(): JSX.Element {
 					</div>
 				</MotionDiv> */}
 				<div className='mx-auto flex size-full flex-col items-start justify-end overflow-hidden'>
-					<div className='relative aspect-[3/4] h-[90%] md:size-full '>
+					<div className='relative aspect-[3/4] h-[80%] md:size-full '>
 						<Suspense
 							fallback={
 								<div className='flex size-full flex-col items-center justify-center space-y-3 bg-background'>
@@ -47,7 +47,7 @@ function Hero(): JSX.Element {
 							/>
 						</Suspense>
 					</div>
-					<div className='absolute bottom-10 w-full max-w-screen-2xl'>
+					<div className='absolute bottom-16 w-full max-w-screen-2xl'>
 						<InfiniteScrollingTextV1 />
 					</div>
 				</div>
