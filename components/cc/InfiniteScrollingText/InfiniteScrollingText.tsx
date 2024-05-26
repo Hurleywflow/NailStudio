@@ -66,7 +66,7 @@ const InfiniteScrollingTextV1 = (): JSX.Element => {
 						},
 					}}
 				>
-					<Link href='/components'>
+					<Link href='https://www.nailstudiopro.com/#contact'>
 						<div className='w-full '>
 							<h1 className=' m-0 w-full  grow cursor-pointer text-[9rem] font-[500] text-stone-100 transition-all  hover:text-stone-200 dark:text-stone-200 dark:hover:text-stone-100  md:text-[10rem] lg:text-[11rem]'>
 								Indulge in a rejuvenating experience with our Nail Studio

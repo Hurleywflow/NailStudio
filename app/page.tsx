@@ -36,7 +36,7 @@ const Home = (): JSX.Element => {
 			<Container className='flex flex-col'>
 				{/* Hero */}
 				<div
-					className='flex h-fit min-h-screen w-full items-center justify-center'
+					className='flex h-fit min-h-svh w-full items-center justify-center'
 					id='home'
 				>
 					<Suspense fallback={<Loading className='' />}>

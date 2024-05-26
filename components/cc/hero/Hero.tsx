@@ -27,7 +27,7 @@ function Hero(): JSX.Element {
 					</div>
 				</MotionDiv> */}
 				<div className='mx-auto flex size-full flex-col items-start justify-end overflow-hidden'>
-					<div className='relative aspect-[3/5] h-[85%] md:size-full '>
+					<div className='relative aspect-[4/5] h-full   md:size-full md:max-w-screen-xl '>
 						<Suspense
 							fallback={
 								<div className='flex size-full flex-col items-center justify-center space-y-3 bg-background'>
@@ -41,13 +41,13 @@ function Hero(): JSX.Element {
 						>
 							<LoadingImage
 								src='/Images/hero/hero.png'
-								className='size-full  object-cover object-center hover:scale-100 '
+								className='object-contain object-left-bottom hover:scale-100 '
 								alt='hero'
 								sizes='(max-width: 430px) 420px,(max-width: 640px) 620px, (max-width: 768px) 740px, (max-width: 1024px) 1000px, 1280px'
 							/>
 						</Suspense>
 					</div>
-					<div className='absolute bottom-14 w-full max-w-screen-2xl'>
+					<div className='absolute bottom-10 w-full max-w-screen-2xl md:bottom-14'>
 						<InfiniteScrollingTextV1 />
 					</div>
 				</div>
