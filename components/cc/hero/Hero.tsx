@@ -27,7 +27,7 @@ function Hero(): JSX.Element {
 					</div>
 				</MotionDiv> */}
 				<div className='mx-auto flex size-full flex-col items-start justify-end overflow-hidden'>
-					<div className='relative aspect-[3/4] h-4/5 md:size-full '>
+					<div className='relative aspect-[3/5] h-[85%] md:size-full '>
 						<Suspense
 							fallback={
 								<div className='flex size-full flex-col items-center justify-center space-y-3 bg-background'>
@@ -47,7 +47,7 @@ function Hero(): JSX.Element {
 							/>
 						</Suspense>
 					</div>
-					<div className='absolute bottom-16 w-full max-w-screen-2xl'>
+					<div className='absolute bottom-14 w-full max-w-screen-2xl'>
 						<InfiniteScrollingTextV1 />
 					</div>
 				</div>
