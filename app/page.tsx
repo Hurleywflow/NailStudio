@@ -50,7 +50,7 @@ const Home = (): JSX.Element => {
 						<NailCardsMemo />
 					</Suspense>
 				</div>
-				{/* OUr Service Gallery */}
+				{/* Our Service Gallery */}
 				<div className='mt-20 flex h-fit w-full flex-col items-center justify-center gap-10'>
 					<Suspense fallback={<Loading className='' />}>
 						<TitleHeadSection>Our Service Gallery</TitleHeadSection>
