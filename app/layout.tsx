@@ -10,6 +10,7 @@ import { ThemeProvider } from "next-themes";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import "@splidejs/react-splide/css";
+import GoogleAnalytics from '@bradgarropy/next-google-analytics';
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -157,6 +158,8 @@ const RootLayout = ({
 				<SpeedInsights />
 				<TailwindIndicator />
 			</body>
+			{/* Google Analytics npm packages*/}
+			<GoogleAnalytics measurementId='GTM-P72WXVFC' />
 		</html>
 	);
 };
