@@ -1,7 +1,7 @@
+"use client";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-"use client";
 
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -83,4 +83,5 @@ const InfiniteScrollingTextV1 = (): JSX.Element => {
 		</div>
 	);
 };
+
 export default InfiniteScrollingTextV1;

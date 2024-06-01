@@ -143,7 +143,7 @@ const RootLayout = ({
 			<head />
 			<body
 				className={cn(
-					"min-h-fit m-0 p-0 bg-background font-sans antialiased bg-dot-black/[0.2]  dark:bg-dot-white/[0.2] overflow-x-clip",
+					"min-h-fit m-0 p-0 bg-background font-sans antialiased relative bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]  dark:bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] overflow-x-clip",
 					fontSans.variable,
 				)}
 			>

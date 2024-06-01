@@ -50,7 +50,7 @@ function Contact(): JSX.Element {
 					</Link>
 				</motion.div>
 			</ImagesSlider>
-			<div className='relative mt-20 h-40 w-full overflow-hidden rounded-md md:h-60'>
+			<div className='h-30 relative mt-20 w-full overflow-hidden rounded-md md:h-40'>
 				<span className='absolute inset-0 z-10 bg-background/40' />
 				<Link
 					href='https://www.google.com/maps/dir//Nail+Studio+1001+Rainbow+Dr+%2335+Gadsden,+AL+35901+United+States/@33.9950333,-86.0083732,18z/data=!4m8!4m7!1m0!1m5!1m1!1s0x888a396362bd9259:0x11749f1074b66395!2m2!1d-86.0077295!2d33.9943662?entry=ttu'
@@ -58,7 +58,7 @@ function Contact(): JSX.Element {
 				>
 					<Suspense
 						fallback={
-							<div className='flex size-full flex-col items-center justify-center space-y-3 bg-background'>
+							<div className='h-30 flex w-full flex-col items-center justify-center space-y-3 bg-background md:h-40'>
 								<Skeleton className='aspect-video w-4/5 rounded-xl' />
 								<div className='flex w-full flex-col items-center justify-center space-y-2'>
 									<Skeleton className='h-4 w-3/5' />
