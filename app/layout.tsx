@@ -10,7 +10,7 @@ import { ThemeProvider } from "next-themes";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import "@splidejs/react-splide/css";
-import GoogleAnalytics from '@bradgarropy/next-google-analytics';
+import GoogleAnalytics from "@bradgarropy/next-google-analytics";
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -144,7 +144,7 @@ const RootLayout = ({
 			<head />
 			<body
 				className={cn(
-					"min-h-fit m-0 p-0 bg-background font-sans antialiased overflow-x-clip bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]  dark:bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]",
+					"h-fit m-0 p-0 bg-background font-sans antialiased overflow-x-clip bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]  dark:bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]",
 					fontSans.variable,
 				)}
 			>
