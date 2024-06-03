@@ -10,7 +10,7 @@ import { ThemeProvider } from "next-themes";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import "@splidejs/react-splide/css";
-import GoogleAnalytics from "@bradgarropy/next-google-analytics";
+import Script from "next/script";
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -158,8 +158,19 @@ const RootLayout = ({
 				<SpeedInsights />
 				<TailwindIndicator />
 			</body>
-			{/* Google Analytics npm packages*/}
-			<GoogleAnalytics measurementId='GTM-P72WXVFC' />
+			<Script
+				strategy='afterInteractive'
+				defer
+				src='https://www.googletagmanager.com/gtag/js?id=GTM-P72WXVFC'
+				// src='https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX'
+			/>
+			<Script id='google-analytics' strategy='afterInteractive'>
+				{` window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'GTM-P72WXVFC');`}
+				{/* gtag('config', 'G-XXXXXXXXXX');`} */}
+			</Script>
 		</html>
 	);
 };
