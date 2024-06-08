@@ -93,7 +93,7 @@ const Home = (): JSX.Element => {
 			<Container className='flex flex-col'>
 				{/* Hero */}
 				<div
-					className='flex max-h-[100vh] h-full w-full items-center justify-center'
+					className='flex h-svh w-full items-center justify-center'
 					id='home'
 				>
 					<DynamicHero />

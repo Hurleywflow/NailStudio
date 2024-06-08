@@ -30,8 +30,8 @@ function Hero(): JSX.Element {
 					And this, is chemical burn.
 				</div>
 			</MotionDiv> */}
-			<div className='mx-auto flex h-[100vh] w-screen max-w-screen-2xl flex-col items-start justify-end overflow-hidden'>
-				<div className='relative w-screen aspect-[910/694] max-w-screen-2xl  '>
+			<div className='mx-auto flex h-svh w-screen max-w-screen-2xl flex-col items-center justify-end overflow-hidden'>
+				<div className='relative w-full aspect-[910/694] max-w-screen-2xl  '>
 					<Suspense
 						fallback={
 							<div className='flex size-full flex-col items-center justify-center space-y-3 bg-background'>
