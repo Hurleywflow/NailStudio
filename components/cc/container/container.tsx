@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-export const Container = ({
+const Container = ({
 	children,
 	className,
 }: {
@@ -19,3 +19,4 @@ export const Container = ({
 		</section>
 	);
 };
+export default Container;

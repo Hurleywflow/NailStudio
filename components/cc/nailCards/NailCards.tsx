@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import { Skeleton } from "@/components/ui/skeleton";
 import Link from "next/link";
-import { Suspense, useEffect, useId, useState } from "react";
+import { Suspense, useEffect, useId, useState, useCallback } from "react";
 type CardType = {
 	src: string;
 	id: number;
@@ -37,23 +37,44 @@ const ImagesData: CardType[] = [
 	},
 ];
 const NailCards = (): JSX.Element => {
-	const [api, setApi] = useState<CarouselApi>();
-	const [current, setCurrent] = useState(0);
-	const keyId = useId();
-	useEffect(() => {
-		if (!api) {
-			return;
-		}
-		setTimeout(() => {
-			if (api.selectedScrollSnap() + 1 === api.scrollSnapList().length) {
-				setCurrent(0);
-				api.scrollTo(0);
-			} else {
-				api.scrollNext();
-				setCurrent(current + 1);
-			}
-		}, 3000);
-	}, [api, current]);
+  const [api, setApi] = useState<CarouselApi>()
+  const [current, setCurrent] = useState(0)
+  const keyId = useId()
+  const handleAutoScroll = useCallback(() => {
+    let intervalId: any = null
+    if (!api) {
+      return
+    }
+    intervalId = setInterval(() => {
+      if (api.selectedScrollSnap() + 1 === api.scrollSnapList().length) {
+        setCurrent(0)
+        api.scrollTo(0)
+      } else {
+        api.scrollNext()
+        setCurrent(current + 1)
+      }
+    }, 3000)
+    return () => clearInterval(intervalId)
+  }, [api, current])
+
+  useEffect(() => {
+    const cleanup = handleAutoScroll()
+    return cleanup
+  }, [handleAutoScroll])
+	// useEffect(() => {
+	// 	if (!api) {
+	// 		return;
+	// 	}
+	// 	setTimeout(() => {
+	// 		if (api.selectedScrollSnap() + 1 === api.scrollSnapList().length) {
+	// 			setCurrent(0);
+	// 			api.scrollTo(0);
+	// 		} else {
+	// 			api.scrollNext();
+	// 			setCurrent(current + 1);
+	// 		}
+	// 	}, 3000);
+	// }, [api, current]);
 	return (
 		<div className='relative w-full max-w-screen-2xl'>
 			<div className='pointer-events-none absolute -left-1 z-10 h-full w-40 bg-gradient-to-r from-background to-transparent' />

@@ -1,9 +1,8 @@
-"use client";
 import ShimmerButton from "@/components/cc/button/ShimmerButton";
 import LoadingImage from "@/components/cc/loading-image/LoadingImage";
 import { H6 } from "@/components/cc/text-utils/TextUtils";
 import { Skeleton } from "@/components/ui/skeleton";
-import { motion } from "framer-motion";
+import { MotionDiv } from "@/lib/framer";
 import Link from "next/link";
 import { Suspense } from "react";
 import TitleHeadSection from "../infinite-moving-cards/TitleHeadSection";
@@ -24,7 +23,7 @@ function Contact(): JSX.Element {
 				<BorderBeam size={250} duration={12} delay={9} />
 			</TitleHeadSection>
 			<ImagesSlider className='h-80 rounded-md md:h-[25rem]' images={images}>
-				<motion.div
+				<MotionDiv
 					initial={{ opacity: 0.3, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{
@@ -42,13 +41,13 @@ function Contact(): JSX.Element {
 					</H6>
 					<Link href='tel:+12565462553'>
 						<ShimmerButton className='text-center text-2xl font-bold md:text-6xl'>
-							<AnimatedShinyText className='inline-flex items-center justify-center px-4 py-1 transition ease-out  hover:duration-300 '>
+							<AnimatedShinyText className='inline-flex items-center justify-center px-4 py-1 transition ease-out  hover:duration-300 text-foreground '>
 								<span>✨ Book Now</span>
 								{/* <ArrowRight className='ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5' /> */}
 							</AnimatedShinyText>
 						</ShimmerButton>
 					</Link>
-				</motion.div>
+				</MotionDiv>
 			</ImagesSlider>
 			<div className='relative mt-20 h-32 w-full overflow-hidden rounded-md md:h-40'>
 				<span className='absolute inset-0 z-10 bg-background/40' />

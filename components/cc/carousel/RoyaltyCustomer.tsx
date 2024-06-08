@@ -6,15 +6,13 @@
 import LoadingImage from "@/components/cc/loading-image/LoadingImage";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { Suspense, useEffect, useId, useRef } from "react";
+import { Suspense, useEffect, useRef } from "react";
 
 const RoyaltyCustomer = (): JSX.Element => {
 	type SplideInstance = {
 		sync: (splide: SplideInstance) => void;
 		splide: SplideInstance;
 	};
-	const keyIndex = useId();
-	const keyIndex1 = useId();
 
 	const slides = [
 		{
@@ -172,8 +170,9 @@ const RoyaltyCustomer = (): JSX.Element => {
 				aria-label='Carousel with Autoplay'
 				ref={primaryRef}
 			>
-				{slides.map((slide, _index) => (
-					<SplideSlide key={keyIndex}>
+				{slides.map((slide, index) => (
+					// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+<SplideSlide key={index}>
 						<div className='relative mb-4 flex aspect-square w-full cursor-grab flex-col items-center overflow-hidden rounded-md md:aspect-video'>
 							<Suspense
 								fallback={
@@ -220,8 +219,9 @@ const RoyaltyCustomer = (): JSX.Element => {
 				}}
 				ref={secondaryRef}
 			>
-				{slides.map((slide, _index) => (
-					<SplideSlide key={keyIndex1} className=''>
+				{slides.map((slide, index) => (
+					// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+<SplideSlide key={index} className=''>
 						<div className='relative flex  aspect-video w-full flex-col items-center overflow-hidden rounded-md'>
 							<Suspense
 								fallback={

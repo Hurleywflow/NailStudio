@@ -1,10 +1,7 @@
 import Footer from "@/components/cc/footer/footer";
 import Navbar from "@/components/cc/navbar/Navbar";
 import { TailwindIndicator } from "@/components/cc/tailwind-indicator/tailwind-indicator";
-import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Inter as FontSans } from "next/font/google";
@@ -144,7 +141,7 @@ const RootLayout = ({
 			<head />
 			<body
 				className={cn(
-					"min-h-fit m-0 p-0 bg-background font-sans antialiased overflow-x-clip bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]  dark:bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]",
+					"max-h-fit font-sans antialiased overflow-x-clip bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]  dark:bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]",
 					fontSans.variable,
 				)}
 			>
@@ -152,10 +149,7 @@ const RootLayout = ({
 					<Navbar />
 					{children}
 					<Footer />
-					<Toaster richColors />
 				</ThemeProvider>
-				<Analytics />
-				<SpeedInsights />
 				<TailwindIndicator />
 			</body>
 			<Script

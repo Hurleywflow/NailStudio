@@ -90,12 +90,11 @@ function Navbar(): JSX.Element {
 							<div className='relative size-10 overflow-hidden rounded-full'>
 								<Images
 									src='/Images/logo/logo.jpg'
-									alt='Nail Studio'
+									alt='NailLogo'
 									className=''
 									fill
 								/>
 							</div>
-							<span className='sr-only'>Nail Studio</span>
 						</Link>
 						<Link href='/#home' className='hover:text-foreground'>
 							Home
@@ -131,9 +130,11 @@ function Navbar(): JSX.Element {
 			<div className='flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4'>
 				<Button className='group relative ml-auto flex-1 overflow-hidden rounded-md px-6  transition  sm:flex-initial '>
 					<Link href='tel:+12565462553'>
-						<span className='relative'>Book Now</span>
+						<span className='relative text-foreground font-semibold'>
+							Book Now
+						</span>
 						<div className='absolute inset-0 top-[-20px] flex h-[calc(100%+40px)] w-full animate-shine-infinite justify-center blur-md'>
-							<div className='relative h-full w-8 bg-gray-300' />
+							<div className='relative h-full w-20 bg-gradient-to-r from-transparent via-stone-300 to-transparent' />
 						</div>
 					</Link>
 				</Button>
