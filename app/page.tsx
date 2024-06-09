@@ -47,7 +47,7 @@ const DynamicManicure = dynamic(
 );
 
 const DynamicPedicure = dynamic(
-	async () => import("@/components/cc/images-utils/verticalScroll/Padicure"),
+	async () => import("@/components/cc/images-utils/verticalScroll/Pedicure"),
 	{
 		ssr: true, // Set to true if you want server-side rendering
 		loading: () => <Loading />,

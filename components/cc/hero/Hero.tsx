@@ -44,12 +44,11 @@ function Hero(): JSX.Element {
 						}
 					>
 						<Image
-							src='/Images/hero/hero.png'
-							className=''
+							src='/Images/hero/hero.webp'
 							alt='hero'
 							priority
 							fill
-							sizes='(max-width: 430px) 380px,(max-width: 640px) 520px, (max-width: 768px) 680px, (max-width: 1024px) 900px, 1100px'
+							sizes='(max-width: 430px) 380px,(max-width: 640px) 520px, (max-width: 768px) 650px, (max-width: 1024px) 694px, 694px'
 						/>
 					</Suspense>
 				</div>
