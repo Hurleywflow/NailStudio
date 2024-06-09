@@ -40,8 +40,11 @@ export const AuroraBackground = ({
            pointer-events-none
            absolute -inset-[10px] opacity-50 will-change-transform`,
 
-						showRadialGradient &&
-							"[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_70%)]",
+						showRadialGradient && (
+							<div className='[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_70%)]'>
+								{/* Your component content here */}
+							</div>
+						),
 					)}
 				/>
 			</div>

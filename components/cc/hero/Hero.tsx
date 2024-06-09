@@ -30,8 +30,8 @@ function Hero(): JSX.Element {
 					And this, is chemical burn.
 				</div>
 			</MotionDiv> */}
-			<div className='mx-auto flex h-svh w-screen max-w-screen-2xl flex-col items-center justify-end overflow-hidden'>
-				<div className='relative w-full aspect-[910/694] max-w-screen-2xl  '>
+			<div className='absolute inset-0 z-10 flex flex-col items-center justify-end overflow-hidden'>
+				<div className='relative w-full aspect-[910/694]  '>
 					<Suspense
 						fallback={
 							<div className='flex size-full flex-col items-center justify-center space-y-3 bg-background'>
@@ -45,7 +45,7 @@ function Hero(): JSX.Element {
 					>
 						<Image
 							src='/Images/hero/hero.png'
-							className='object-center'
+							className=''
 							alt='hero'
 							priority
 							fill
