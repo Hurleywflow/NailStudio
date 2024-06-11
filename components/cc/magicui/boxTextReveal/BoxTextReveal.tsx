@@ -10,7 +10,7 @@ interface BoxRevealProps {
 	duration?: number;
 }
 
-export const BoxReveal = ({
+const BoxReveal = ({
 	children,
 	width = "fit-content",
 	boxColor,
