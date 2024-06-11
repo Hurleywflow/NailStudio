@@ -20,7 +20,8 @@ const BoxReveal = ({
 	const slideControls = useAnimation();
 
 	const ref = useRef(null);
-	const isInView = useInView(ref, { once: true });
+	// const isInView = useInView(ref, { once: true });
+	const isInView = useInView(ref, { once: false });
 
 	useEffect(() => {
 		if (isInView) {
@@ -41,7 +42,7 @@ const BoxReveal = ({
 				}}
 				initial='hidden'
 				animate={mainControls}
-				transition={{ duration: duration ? duration : 0.5, delay: 0.25 }}
+				transition={{ duration: duration ? duration : 0.5, delay: 0.5 }}
 			>
 				{children}
 			</motion.div>

@@ -4,7 +4,7 @@ import BoxReveal from "./BoxTextReveal";
 async function BoxRevealDemo() {
 	return (
 		<div className='h-fit w-full items-center justify-center overflow-hidden '>
-			<BoxReveal boxColor={"#e6bfff"} duration={0.9}>
+			<BoxReveal boxColor={"#eed4ffb8"} duration={0.9}>
 				<H6>
 					{" "}
 					Looking for a truly exhilarating experience that will leave you

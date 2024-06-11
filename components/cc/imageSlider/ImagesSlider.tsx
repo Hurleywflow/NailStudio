@@ -63,7 +63,7 @@ export const ImagesSlider = ({
 		loadImages();
 	}, [images]);
 
-	useEffect(() => {
+  useEffect(() => {
 		const handleKeyDown = (event: KeyboardEvent): void => {
 			if (event.key === "ArrowRight") {
 				handleNext();
@@ -75,11 +75,11 @@ export const ImagesSlider = ({
 		window.addEventListener("keydown", handleKeyDown);
 
 		// autoplay
-		let interval: NodeJS.Timeout | null = null;
+		let interval: number | NodeJS.Timeout | null = null;
 		if (autoplay) {
 			interval = setInterval(() => {
 				handleNext();
-			}, 10000);
+			}, 10000) as unknown as number; // Assert the type to number
 		}
 
 		return () => {
