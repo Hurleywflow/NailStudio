@@ -27,7 +27,7 @@ const Footer = (): JSX.Element => {
 				<span className='font-semibold'>About this website:</span> Designed and
 				built by
 				<Link href='https://netcodedev.com' target='_blank'>
-					<Button className='m-1 h-4 p-0' variant='ghost'>
+					<Button className='m-1 h-4 p-0 animate-pulse' variant='ghost'>
 						NetCode
 					</Button>
 				</Link>
