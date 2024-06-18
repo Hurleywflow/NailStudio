@@ -46,7 +46,7 @@ const AnimatedText = ({
 	const isInView = useInView(ref, { amount: 0.5, once });
 
 	useLayoutEffect(() => {
-		let timeout: NodeJS.Timeout;
+		let timeout: any;
 		const show = (): void => {
 			controls.start("visible");
 			if (repeatDelay) {
