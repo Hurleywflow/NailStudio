@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { cn } from "@/lib/utils";
 
 const Container = ({
 	children,
@@ -9,7 +9,7 @@ const Container = ({
 }): JSX.Element => {
 	return (
 		<section
-			className={classNames(
+			className={cn(
 				"m-0 mx-auto box-border w-full max-w-[1536px] p-0 h-fit flex flex-col items-center justify-center",
 				className,
 			)}
