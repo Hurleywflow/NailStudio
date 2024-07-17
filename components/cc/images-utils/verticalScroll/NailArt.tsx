@@ -35,11 +35,7 @@ const IMAGES_DATA: CardType[] = [
 	{ id: 23, src: "/Images/nail-art/23.webp", height: 400, width: 400 },
 	{ id: 24, src: "/Images/nail-art/24.webp", height: 400, width: 400 },
 	{ id: 25, src: "/Images/nail-art/25.webp", height: 400, width: 400 },
-	// { id: 26, src: "/Images/nail-art/26.webp", height: 400, width: 400 },
-	// { id: 27, src: "/Images/nail-art/27.webp", height: 400, width: 400 },
-	// { id: 28, src: "/Images/nail-art/28.webp", height: 400, width: 400 },
-	// { id: 29, src: "/Images/nail-art/29.webp", height: 400, width: 400 },
-	// { id: 30, src: "/Images/nail-art/30.webp", height: 400, width: 400 },
+
 ];
 
 function NailArt(): JSX.Element {

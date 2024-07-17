@@ -172,7 +172,7 @@ const RoyaltyCustomer = (): JSX.Element => {
 			>
 				{slides.map((slide, index) => (
 					// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-<SplideSlide key={index}>
+					<SplideSlide key={index}>
 						<div className='relative mb-4 flex aspect-square w-full cursor-grab flex-col items-center overflow-hidden rounded-md md:aspect-video'>
 							<Suspense
 								fallback={
@@ -221,7 +221,7 @@ const RoyaltyCustomer = (): JSX.Element => {
 			>
 				{slides.map((slide, index) => (
 					// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-<SplideSlide key={index} className=''>
+					<SplideSlide key={index} className=''>
 						<div className='relative flex  aspect-video w-full flex-col items-center overflow-hidden rounded-md'>
 							<Suspense
 								fallback={
