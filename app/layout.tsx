@@ -85,19 +85,19 @@ export const metadata: Metadata = {
 		"nail salon gadsden al yelp",
 		"nail salon gadsden al google reviews",
 	],
-	alternates: {
-		canonical: "https://www.nailstudiopro.com",
-		languages: {
-			"en-US": "https://www.nailstudiopro.com",
-		},
-		media: {
-			"only screen and (max-width: 600px)":
-				"https://www.nailstudiopro.com/mobile",
-		},
-		types: {
-			"application/rss+xml": "https://www.nailstudiopro.com/rss",
-		},
-	},
+	// alternates: {
+	// 	canonical: "https://www.nailstudiopro.com",
+	// 	languages: {
+	// 		"en-US": "https://www.nailstudiopro.com",
+	// 	},
+	// 	media: {
+	// 		"only screen and (max-width: 600px)":
+	// 			"https://www.nailstudiopro.com/mobile",
+	// 	},
+	// 	types: {
+	// 		"application/rss+xml": "https://www.nailstudiopro.com/rss",
+	// 	},
+	// },
 	title: "Nail Salon Gadsden || Nail Studio",
 	description:
 		"Nail Studio offers a range of services for a relaxing manicure and pedicure experience. Our capable team is here to cater to your needs.",
