@@ -310,42 +310,85 @@
 	}
 }
 
-/* Sticky horizontal galleries: desktop only, native timelines only. */
-@media (min-width: 900px) {
-	@supports (animation-timeline: view()) {
-		@media (prefers-reduced-motion: no-preference) {
+/* Sticky horizontal galleries: all screen sizes, native timelines only. */
+@supports (animation-timeline: view()) {
+	@media (prefers-reduced-motion: no-preference) {
+		/* Mobile: cards are 76vw, need more scroll room */
+		[data-pan] {
+			height: 380vh;
+			view-timeline-name: --pan;
+			view-timeline-axis: block;
+		}
+
+		[data-pan="reverse"] {
+			height: 360vh;
+		}
+
+		/* Tablet: cards are 46vw */
+		@media (min-width: 640px) {
+			[data-pan] {
+				height: 310vh;
+			}
+
+			[data-pan="reverse"] {
+				height: 290vh;
+			}
+		}
+
+		/* Desktop: original values */
+		@media (min-width: 900px) {
 			[data-pan] {
 				height: 250vh;
-				view-timeline-name: --pan;
-				view-timeline-axis: block;
 			}
 
 			[data-pan="reverse"] {
 				height: 230vh;
 			}
+		}
 
-			[data-pan-sticky] {
-				position: sticky;
-				top: 0;
-				height: 100svh;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				overflow: clip;
+		[data-pan-sticky] {
+			position: sticky;
+			top: 0;
+			height: 100svh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			overflow: clip;
+		}
+
+		[data-pan-track] {
+			width: max-content;
+			overflow: visible;
+			scroll-snap-type: none;
+			animation: pan-left linear both;
+			animation-timeline: --pan;
+			animation-range: entry 100% exit 0%;
+			will-change: transform;
+		}
+
+		[data-pan="reverse"] [data-pan-track] {
+			animation-name: pan-right;
+		}
+
+		/* Hide swipe hint when scroll-driven animation is active */
+		[data-pan] .swipe-hint {
+			display: none;
+		}
+
+		/* Strip gallery (StudioStrip): 9 cards, narrower widths (62vw → 34vw → 19rem) */
+		[data-pan="strip"] {
+			height: 310vh;
+		}
+
+		@media (min-width: 640px) {
+			[data-pan="strip"] {
+				height: 260vh;
 			}
+		}
 
-			[data-pan-track] {
-				width: max-content;
-				overflow: visible;
-				scroll-snap-type: none;
-				animation: pan-left linear both;
-				animation-timeline: --pan;
-				animation-range: entry 100% exit 100%;
-				will-change: transform;
-			}
-
-			[data-pan="reverse"] [data-pan-track] {
-				animation-name: pan-right;
+		@media (min-width: 900px) {
+			[data-pan="strip"] {
+				height: 220vh;
 			}
 		}
 	}
