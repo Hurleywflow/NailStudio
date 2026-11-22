@@ -53,8 +53,42 @@ const config = {
 			},
 			fontFamily: {
 				sans: ["var(--font-sans)", ...fontFamily.sans],
+				display: ["var(--font-display)", "Georgia", "Times New Roman", "serif"],
+			},
+			fontSize: {
+				eyebrow: [
+					"0.6875rem",
+					{ lineHeight: "1", letterSpacing: "0.22em" },
+				],
+				"display-sm": [
+					"clamp(1.5rem, 2.6vw, 2.25rem)",
+					{ lineHeight: "1.1", letterSpacing: "-0.01em" },
+				],
+				"display-md": [
+					"clamp(2rem, 4.2vw, 3.5rem)",
+					{ lineHeight: "1.02", letterSpacing: "-0.015em" },
+				],
+				"display-lg": [
+					"clamp(2.75rem, 6vw, 5.5rem)",
+					{ lineHeight: "0.95", letterSpacing: "-0.02em" },
+				],
+				"display-xl": [
+					"clamp(3.25rem, 8.4vw, 8rem)",
+					{ lineHeight: "0.92", letterSpacing: "-0.03em" },
+				],
+				"body-lg": [
+					"clamp(1.0625rem, 1.15vw, 1.25rem)",
+					{ lineHeight: "1.65" },
+				],
 			},
 			colors: {
+				paper: "hsl(var(--paper))",
+				bone: "hsl(var(--bone))",
+				ink: "hsl(var(--ink))",
+				wine: "hsl(var(--wine))",
+				clay: "hsl(var(--clay))",
+				line: "hsl(var(--line))",
+				blush: "hsl(var(--blush))",
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",
 				ring: "hsl(var(--ring))",
@@ -93,6 +127,10 @@ const config = {
 				lg: "var(--radius)",
 				md: "calc(var(--radius) - 2px)",
 				sm: "calc(var(--radius) - 4px)",
+			},
+			transitionTimingFunction: {
+				"out-expo": "cubic-bezier(0.16, 1, 0.3, 1)",
+				"in-out-soft": "cubic-bezier(0.65, 0, 0.35, 1)",
 			},
 			textShadow: {
 				sm: "0 1px 2px var(--tw-shadow-color)",

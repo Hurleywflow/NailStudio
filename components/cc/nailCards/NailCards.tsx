@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import { Skeleton } from "@/components/ui/skeleton";
 import Link from "next/link";
-import { Suspense, useEffect, useId, useState, useCallback } from "react";
+import { Suspense, useEffect, useId, useState } from "react";
 type CardType = {
 	src: string;
 	id: number;
@@ -37,30 +37,24 @@ const ImagesData: CardType[] = [
 	},
 ];
 const NailCards = (): JSX.Element => {
-  const [api, setApi] = useState<CarouselApi>()
-  const [current, setCurrent] = useState(0)
-  const keyId = useId()
-  const handleAutoScroll = useCallback(() => {
-    let intervalId: any = null
-    if (!api) {
-      return
-    }
-    intervalId = setInterval(() => {
-      if (api.selectedScrollSnap() + 1 === api.scrollSnapList().length) {
-        setCurrent(0)
-        api.scrollTo(0)
-      } else {
-        api.scrollNext()
-        setCurrent(current + 1)
-      }
-    }, 3000)
-    return () => clearInterval(intervalId)
-  }, [api, current])
+  const [api, setApi] = useState<CarouselApi>();
+  const keyId = useId();
 
   useEffect(() => {
-    const cleanup = handleAutoScroll()
-    return cleanup
-  }, [handleAutoScroll])
+    if (!api) {
+      return undefined;
+    }
+    const intervalId = setInterval(() => {
+      if (api.selectedScrollSnap() + 1 === api.scrollSnapList().length) {
+        api.scrollTo(0);
+      } else {
+        api.scrollNext();
+      }
+    }, 3000);
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [api]);
 	// useEffect(() => {
 	// 	if (!api) {
 	// 		return;

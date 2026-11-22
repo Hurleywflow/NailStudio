@@ -1,0 +1,5 @@
+[     255ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38560
+[     267ms] [LOG] [Million Lint] Initialized with http://localhost:42424/ingest @ webpack-internal:///(app-pages-browser)/./node_modules/@million/lint/dist/runtime-dev/index.mjs:2283
+[    1333ms] [LOG] [Million Lint] Ingested 9 events [Object, Object, Object, Object, Object, Object, Object, Object, Object] @ webpack-internal:///(app-pages-browser)/./node_modules/@million/lint/dist/runtime-dev/index.mjs:2020
+[    3100ms] [WARNING] Image with src "/Images/contact/1.webp" was detected as the Largest Contentful Paint (LCP). Please add the "priority" property if this image is above the fold.
+Read more: https://nextjs.org/docs/api-reference/next/image#priority @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/shared/lib/utils/warn-once.js:16

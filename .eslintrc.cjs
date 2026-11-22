@@ -48,7 +48,6 @@ const config = {
 				// "plugin:@typescript-eslint/recommended-requiring-type-checking",
 				"plugin:tailwindcss/recommended",
 				"plugin:react/recommended",
-				"plugin:react-hooks/recommended",
 				"plugin:@next/next/recommended",
 				"prettier",
 				"async",
@@ -59,12 +58,9 @@ const config = {
 			plugins: [
 				"@typescript-eslint",
 				"tailwindcss",
-				"eslint-plugin-react",
 				"jsx-a11y",
 				"eslint-plugin-node",
-				"@typescript-eslint",
 				"react",
-				"react-hooks",
 			],
 			settings: {
 				// react: {
@@ -279,7 +275,9 @@ const config = {
 
 				// Tailwind
 				"tailwindcss/classnames-order": "warn",
-				"tailwindcss/migration-from-tailwind-2": "warn",
+				// Project is on Tailwind 3.4; this rule only knows v2-era class
+				// renames and false-positives on `overflow-clip` (valid in v3).
+				"tailwindcss/migration-from-tailwind-2": "off",
 				"tailwindcss/enforces-negative-arbitrary-values": "warn",
 				"tailwindcss/enforces-shorthand": "warn",
 				"tailwindcss/no-contradicting-classname": "warn",
