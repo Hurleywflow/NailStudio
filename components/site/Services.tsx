@@ -33,7 +33,7 @@ export function Services(): JSX.Element {
 						<Link
 							key={service.slug}
 							href={service.href}
-							className='group grid grid-cols-[2.5rem_1fr_auto] items-center gap-4 border-b border-line py-7 md:grid-cols-[3.5rem_1fr_12rem_2rem] md:gap-8 md:py-9'
+							className='group grid grid-cols-[2.5rem_1fr_10rem] items-center gap-4 border-b border-line py-7 md:grid-cols-[3.5rem_1fr_12rem_2rem] md:gap-8 md:py-9'
 						>
 							<span className='text-eyebrow text-wine'>
 								{service.index}
@@ -50,7 +50,7 @@ export function Services(): JSX.Element {
 								</span>
 							</span>
 
-							<span className='relative hidden aspect-[3/2] w-full overflow-hidden bg-bone md:block'>
+							<span className='relative aspect-[3/2] w-full overflow-hidden bg-bone md:w-[12rem] md:shrink-0'>
 								<Image
 									src={service.image}
 									alt={service.alt}

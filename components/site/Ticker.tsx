@@ -25,7 +25,7 @@ export function Ticker(): JSX.Element {
 	return (
 		<div
 			data-marquee-wrap
-			className='overflow-hidden border-y border-ink bg-ink py-5'
+			className='overflow-x-clip border-y border-ink bg-ink py-5'
 			aria-hidden
 		>
 			<div data-marquee>

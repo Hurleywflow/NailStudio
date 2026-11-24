@@ -74,11 +74,13 @@
 		scroll-behavior: smooth;
 		scroll-padding-top: 6rem;
 		-webkit-text-size-adjust: 100%;
+		overflow-x: clip;
 	}
 
 	body {
 		@apply bg-paper text-ink antialiased;
 		overscroll-behavior-y: none;
+		overflow-x: clip;
 	}
 
 	::selection {
@@ -264,6 +266,10 @@
 		display: flex;
 		width: max-content;
 		animation: marquee-x 46s linear infinite;
+	}
+
+	[data-marquee-wrap] {
+		overflow: hidden;
 	}
 
 	[data-marquee-wrap]:hover [data-marquee] {

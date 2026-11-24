@@ -83,16 +83,10 @@ export const manicureGallery: GalleryImage[] = [
 	{ src: "/Images/manicure/24.webp", alt: "Lilac manicure with fine line work" },
 	{ src: "/Images/manicure/29.webp", alt: "Nude manicure with gold accent and rings" },
 	{ src: "/Images/manicure/31.webp", alt: "Almond-shaped white manicure" },
-	{ src: "/Images/manicure/34.webp", alt: "Pink glitter manicure" },
-	{ src: "/Images/manicure/45.webp", alt: "White manicure with lace detail" },
-	{ src: "/Images/manicure/8.webp", alt: "Red manicure with floral accent" },
 ];
 
 export const pedicureGallery: GalleryImage[] = [
 	{ src: "/Images/pedicure/1.webp", alt: "Floral pedicure in blue and coral" },
-	{ src: "/Images/pedicure/10.webp", alt: "Nude pedicure with a soft gloss finish" },
-	{ src: "/Images/pedicure/11.webp", alt: "Striped pedicure in pink, blue and violet" },
-	{ src: "/Images/pedicure/12.webp", alt: "Sheer nude pedicure with a clean square shape" },
 	{ src: "/Images/pedicure/13.webp", alt: "Blue pedicure with gem detail" },
 	{ src: "/Images/pedicure/2.webp", alt: "Pink and white pedicure with silver detail" },
 	{ src: "/Images/pedicure/6.webp", alt: "White pedicure with green leaf detail" },
@@ -107,9 +101,6 @@ export const nailArtGallery: GalleryImage[] = [
 	{ src: "/Images/nail-art/9.webp", alt: "Rose gold chrome nail art" },
 	{ src: "/Images/nail-art/11.webp", alt: "Pastel ombré nail art" },
 	{ src: "/Images/nail-art/13.webp", alt: "Gold sculpted nail art" },
-	{ src: "/Images/nail-art/17.webp", alt: "Nude nail art with hand-painted flowers" },
-	{ src: "/Images/nail-art/21.webp", alt: "Dark chrome nail art" },
-	{ src: "/Images/nail-art/23.webp", alt: "Rose gold nail art with crystal detail" },
 ];
 
 export const studioPhotos: GalleryImage[] = [
@@ -119,9 +110,6 @@ export const studioPhotos: GalleryImage[] = [
 	{ src: "/Images/customer/15.webp", alt: "Guests being looked after in the studio" },
 	{ src: "/Images/customer/17.webp", alt: "A guest smiling during an appointment" },
 	{ src: "/Images/customer/19.webp", alt: "A young guest in the studio" },
-	{ src: "/Images/customer/3.webp", alt: "A guest with freshly finished nails" },
-	{ src: "/Images/customer/4.webp", alt: "A guest and her daughter at the studio" },
-	{ src: "/Images/customer/9.webp", alt: "A guest and her daughter showing their nails" },
 ];
 
 export const reviews: Review[] = [

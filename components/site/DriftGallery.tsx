@@ -48,7 +48,7 @@ export function DriftGallery({
 					</Link>
 				</div>
 
-				<div className='grid grid-cols-2 gap-3 md:gap-4 lg:col-span-8'>
+				<div className='grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:col-span-8'>
 					<div data-drift='up' className='flex flex-col gap-3 md:gap-4'>
 						{firstColumn.map((image) => (
 							<figure

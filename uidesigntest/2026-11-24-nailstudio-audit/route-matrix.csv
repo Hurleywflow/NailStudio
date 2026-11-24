@@ -1,0 +1,2 @@
+route_id,path,template,state,auth,data_fixture,mobile,tablet,desktop_wide,notes
+R001,/,home,default,public,static-content,required,required,required,Single page with multiple sections (hero, services, manifesto, galleries, reviews, studio strip, contact)

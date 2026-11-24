@@ -29,7 +29,7 @@ export function SiteHeader(): JSX.Element {
 						<Link
 							key={link.href}
 							href={link.href}
-							className='relative py-2 text-[0.65rem] uppercase tracking-[0.2em] text-clay transition-colors after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-wine after:transition-transform after:duration-300 hover:text-ink hover:after:scale-x-100'
+							className='relative py-2 text-[0.65rem] uppercase tracking-[0.2em] text-clay transition-colors after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-wine after:transition-transform after:duration-300 hover:text-ink hover:after:scale-x-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-wine focus-visible:ring-offset-2 focus-visible:ring-offset-paper'
 						>
 							{link.label}
 						</Link>
