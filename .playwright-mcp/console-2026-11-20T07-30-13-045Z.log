@@ -1,0 +1,6 @@
+[     249ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom.development.js:38560
+[     262ms] [LOG] [Million Lint] Initialized with http://localhost:42424/ingest @ webpack-internal:///(app-pages-browser)/./node_modules/@million/lint/dist/runtime-dev/index.mjs:2283
+[    1350ms] [LOG] [Million Lint] Ingested 9 events [Object, Object, Object, Object, Object, Object, Object, Object, Object] @ webpack-internal:///(app-pages-browser)/./node_modules/@million/lint/dist/runtime-dev/index.mjs:2020
+[   59588ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:187
+[   59791ms] [LOG] [Fast Refresh] done in 204ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:44
+[   60959ms] [LOG] [Million Lint] Ingested 9 events [Object, Object, Object, Object, Object, Object, Object, Object, Object] @ webpack-internal:///(app-pages-browser)/./node_modules/@million/lint/dist/runtime-dev/index.mjs:2020

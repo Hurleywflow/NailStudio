@@ -1,89 +1,417 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
-
 
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 346.8 77.2% 49.8%;
-    --primary-foreground: 355.7 100% 97.3%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 346.8 77.2% 49.8%;
-    --radius: 0.5rem;
-  }
+	:root {
+		/* Nail Studio editorial palette */
+		--paper: 40 40% 97%;
+		--bone: 36 30% 93%;
+		--ink: 24 15% 8%;
+		--wine: 351 55% 30%;
+		--clay: 28 12% 42%;
+		--line: 34 16% 84%;
+		--blush: 15 35% 90%;
 
-  .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 0 0% 95%;
-    --card: 24 9.8% 10%;
-    --card-foreground: 0 0% 95%;
-    --popover: 0 0% 9%;
-    --popover-foreground: 0 0% 95%;
-    --primary: 346.8 77.2% 49.8%;
-    --primary-foreground: 355.7 100% 97.3%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 15%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 12 6.5% 15.1%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 85.7% 97.3%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 346.8 77.2% 49.8%;
-  }
+		/* Semantic shadcn tokens, re-grounded on the studio palette */
+		--background: var(--paper);
+		--foreground: var(--ink);
+		--card: var(--paper);
+		--card-foreground: var(--ink);
+		--popover: var(--paper);
+		--popover-foreground: var(--ink);
+		--primary: var(--wine);
+		--primary-foreground: var(--paper);
+		--secondary: var(--bone);
+		--secondary-foreground: var(--ink);
+		--muted: var(--bone);
+		--muted-foreground: var(--clay);
+		--accent: var(--blush);
+		--accent-foreground: var(--ink);
+		--destructive: 0 62% 40%;
+		--destructive-foreground: var(--paper);
+		--border: var(--line);
+		--input: var(--line);
+		--ring: var(--wine);
+		--radius: 0.25rem;
+
+		/* Motion tokens */
+		--ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+		--ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+		--duration-fast: 240ms;
+		--duration-slow: 600ms;
+	}
+
+	.dark {
+		--background: 24 15% 8%;
+		--foreground: 40 40% 97%;
+		--card: 24 12% 11%;
+		--card-foreground: 40 40% 97%;
+		--popover: 24 12% 11%;
+		--popover-foreground: 40 40% 97%;
+		--primary: 351 55% 42%;
+		--primary-foreground: 40 40% 97%;
+		--secondary: 24 10% 15%;
+		--secondary-foreground: 40 40% 97%;
+		--muted: 24 10% 15%;
+		--muted-foreground: 34 12% 66%;
+		--accent: 24 12% 18%;
+		--accent-foreground: 40 40% 97%;
+		--border: 24 10% 20%;
+		--input: 24 10% 20%;
+		--ring: 351 55% 42%;
+	}
+
+	html {
+		scroll-behavior: smooth;
+		scroll-padding-top: 6rem;
+		-webkit-text-size-adjust: 100%;
+		overflow-x: clip;
+	}
+
+	body {
+		@apply bg-paper text-ink antialiased;
+		overscroll-behavior-y: none;
+		overflow-x: clip;
+	}
+
+	::selection {
+		background-color: hsl(var(--wine));
+		color: hsl(var(--paper));
+	}
+
+	:where(a, button, [role="button"], [tabindex]):focus-visible {
+		outline: 2px solid hsl(var(--wine));
+		outline-offset: 3px;
+	}
+
+	img {
+		-webkit-user-drag: none;
+	}
 }
 
+@layer components {
+	/* A quiet paper grain. Purely decorative, no layout impact. */
+	.paper-grain::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		z-index: 0;
+		pointer-events: none;
+		opacity: 0.35;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.16'/%3E%3C/svg%3E");
+		mix-blend-mode: multiply;
+	}
 
+	.hairline {
+		height: 1px;
+		width: 100%;
+		background-color: hsl(var(--line));
+	}
 
+	.gallery-scroller {
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
 
-
-
-
-
-
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+	.gallery-scroller::-webkit-scrollbar {
+		display: none;
+	}
 }
-/* custom setting up */
-html {
-  scroll-behavior: smooth !important;
-}
-body {
-  overscroll-behavior: none;
+
+/* ------------------------------------------------------------------ */
+/* Motion primitives                                                   */
+/* Base states are always the final, visible state. Animation is only  */
+/* layered on top when the browser supports it and the user allows it. */
+/* ------------------------------------------------------------------ */
+
+@keyframes hero-rise {
+	from {
+		transform: translate3d(0, 110%, 0);
+	}
+	to {
+		transform: translate3d(0, 0, 0);
+	}
 }
 
-/* @layer base {/ */
-/* Button {
-    @apply mix-blend-difference
-  } */
-/* } */
+@keyframes hero-fade {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 1.25rem, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes hero-clip {
+	from {
+		clip-path: inset(0 0 100% 0);
+		transform: scale(1.06);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+		transform: scale(1);
+	}
+}
+
+@keyframes hero-drift {
+	to {
+		transform: translate3d(0, 7%, 0) scale(1.04);
+	}
+}
+
+@keyframes reveal-rise {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 2.25rem, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes reveal-mask {
+	from {
+		clip-path: inset(0 0 100% 0);
+		transform: translate3d(0, 1.25rem, 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes rule-draw {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
+	}
+}
+
+@keyframes drift-up {
+	from {
+		transform: translate3d(0, 4%, 0);
+	}
+	to {
+		transform: translate3d(0, -4%, 0);
+	}
+}
+
+@keyframes drift-down {
+	from {
+		transform: translate3d(0, -4%, 0);
+	}
+	to {
+		transform: translate3d(0, 4%, 0);
+	}
+}
+
+@keyframes pan-left {
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		transform: translate3d(calc(-100% + 100vw), 0, 0);
+	}
+}
+
+@keyframes pan-right {
+	from {
+		transform: translate3d(calc(-100% + 100vw), 0, 0);
+	}
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes marquee-x {
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		transform: translate3d(-50%, 0, 0);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	[data-hero-line] > span {
+		animation: hero-rise 1150ms var(--ease-out) both;
+		animation-delay: var(--delay, 0ms);
+	}
+
+	[data-hero-fade] {
+		animation: hero-fade 900ms var(--ease-out) both;
+		animation-delay: var(--delay, 0ms);
+	}
+
+	[data-hero-clip] {
+		animation: hero-clip 1400ms var(--ease-out) both;
+		animation-delay: 120ms;
+	}
+
+	[data-marquee] {
+		display: flex;
+		width: max-content;
+		animation: marquee-x 46s linear infinite;
+	}
+
+	[data-marquee-wrap] {
+		overflow: hidden;
+	}
+
+	[data-marquee-wrap]:hover [data-marquee] {
+		animation-play-state: paused;
+	}
+}
+
+@supports (animation-timeline: view()) {
+	@media (prefers-reduced-motion: no-preference) {
+		[data-reveal] {
+			animation: reveal-rise linear both;
+			animation-timeline: view();
+			animation-range: entry 5% entry 45%;
+		}
+
+		[data-reveal="mask"] {
+			animation-name: reveal-mask;
+			animation-range: entry 5% entry 55%;
+		}
+
+		[data-reveal="rule"] {
+			animation-name: rule-draw;
+			animation-range: entry 20% entry 70%;
+			transform-origin: left center;
+		}
+
+		[data-drift="up"] {
+			animation: drift-up linear both;
+			animation-timeline: view();
+			animation-range: cover 0% cover 100%;
+		}
+
+		[data-drift="down"] {
+			animation: drift-down linear both;
+			animation-timeline: view();
+			animation-range: cover 0% cover 100%;
+		}
+
+		[data-hero-media] {
+			animation: hero-drift linear both;
+			animation-timeline: scroll();
+			animation-range: 0 90vh;
+		}
+	}
+}
+
+/* Sticky horizontal galleries: all screen sizes, native timelines only. */
+@supports (animation-timeline: view()) {
+	@media (prefers-reduced-motion: no-preference) {
+		/* Mobile: cards are 76vw, need more scroll room */
+		[data-pan] {
+			height: 380vh;
+			view-timeline-name: --pan;
+			view-timeline-axis: block;
+		}
+
+		[data-pan="reverse"] {
+			height: 360vh;
+		}
+
+		/* Tablet: cards are 46vw */
+		@media (min-width: 640px) {
+			[data-pan] {
+				height: 310vh;
+			}
+
+			[data-pan="reverse"] {
+				height: 290vh;
+			}
+		}
+
+		/* Desktop: original values */
+		@media (min-width: 900px) {
+			[data-pan] {
+				height: 250vh;
+			}
+
+			[data-pan="reverse"] {
+				height: 230vh;
+			}
+		}
+
+		[data-pan-sticky] {
+			position: sticky;
+			top: 0;
+			height: 100svh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			overflow: clip;
+		}
+
+		[data-pan-track] {
+			width: max-content;
+			overflow: visible;
+			scroll-snap-type: none;
+			animation: pan-left linear both;
+			animation-timeline: --pan;
+			animation-range: entry 100% exit 0%;
+			will-change: transform;
+		}
+
+		[data-pan="reverse"] [data-pan-track] {
+			animation-name: pan-right;
+		}
+
+		/* Hide swipe hint when scroll-driven animation is active */
+		[data-pan] .swipe-hint {
+			display: none;
+		}
+
+		/* Strip gallery (StudioStrip): 9 cards, narrower widths (62vw → 34vw → 19rem) */
+		[data-pan="strip"] {
+			height: 310vh;
+		}
+
+		@media (min-width: 640px) {
+			[data-pan="strip"] {
+				height: 260vh;
+			}
+		}
+
+		@media (min-width: 900px) {
+			[data-pan="strip"] {
+				height: 220vh;
+			}
+		}
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-delay: 0ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

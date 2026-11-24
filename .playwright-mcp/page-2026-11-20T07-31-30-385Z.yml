@@ -1,0 +1,427 @@
+- generic [active] [ref=f7e1]:
+  - link "Skip to content" [ref=f7e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f7e3]:
+    - generic [ref=f7e4]:
+      - link "Nail Studio, back to top" [ref=f7e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f7e6]: Nail Studio
+        - generic [ref=f7e7]: Gadsden, AL
+      - navigation "Primary" [ref=f7e8]:
+        - link "Services" [ref=f7e9] [cursor=pointer]:
+          - /url: "#services"
+        - link "Manicure" [ref=f7e10] [cursor=pointer]:
+          - /url: "#manicure"
+        - link "Pedicure" [ref=f7e11] [cursor=pointer]:
+          - /url: "#pedicure"
+        - link "Nail Art" [ref=f7e12] [cursor=pointer]:
+          - /url: "#nail-art"
+        - link "Reviews" [ref=f7e13] [cursor=pointer]:
+          - /url: "#reviews"
+      - generic [ref=f7e14]:
+        - link "+1 256 546 2553" [ref=f7e15] [cursor=pointer]:
+          - /url: tel:+12565462553
+        - link "Book" [ref=f7e16] [cursor=pointer]:
+          - /url: tel:+12565462553
+  - main [ref=f7e17]:
+    - generic [ref=f7e19]:
+      - generic [ref=f7e20]:
+        - generic [ref=f7e21]:
+          - generic [ref=f7e22]:
+            - generic [ref=f7e23]: —
+            - generic [ref=f7e25]: Nail Studio · Gadsden, Alabama
+          - heading "The quiet art of beautiful hands." [level=1] [ref=f7e26]:
+            - generic [ref=f7e27]: The quiet art
+            - generic [ref=f7e29]: of beautiful
+            - generic [ref=f7e31]: hands.
+        - generic [ref=f7e33]:
+          - paragraph [ref=f7e34]: Manicures, pedicures and hand-painted nail art, practised slowly in the heart of Gadsden.
+          - generic [ref=f7e35]:
+            - link "Book an appointment" [ref=f7e36] [cursor=pointer]:
+              - /url: tel:+12565462553
+            - link "See the work" [ref=f7e43] [cursor=pointer]:
+              - /url: "#nail-art"
+          - generic [ref=f7e47]:
+            - generic [ref=f7e48]: Manicure
+            - generic [ref=f7e50]: Pedicure
+            - generic [ref=f7e52]: Nail Art
+      - generic [ref=f7e53]:
+        - figure [ref=f7e54]:
+          - img "A guest with a red manicure, photographed at Nail Studio in Gadsden" [ref=f7e55]
+        - generic [ref=f7e56]:
+          - generic [ref=f7e57]: A finished set
+          - generic [ref=f7e58]: Gadsden, AL
+    - generic [ref=f7e60]:
+      - generic [ref=f7e61]:
+        - generic [ref=f7e62]: Manicure
+        - generic [ref=f7e65]: Pedicure
+        - generic [ref=f7e68]: Nail Art
+        - generic [ref=f7e71]: Nail Studio
+        - generic [ref=f7e74]: Gadsden, Alabama
+      - generic [ref=f7e77]:
+        - generic [ref=f7e78]: Manicure
+        - generic [ref=f7e81]: Pedicure
+        - generic [ref=f7e84]: Nail Art
+        - generic [ref=f7e87]: Nail Studio
+        - generic [ref=f7e90]: Gadsden, Alabama
+    - generic [ref=f7e94]:
+      - generic [ref=f7e95]:
+        - generic [ref=f7e96]:
+          - generic [ref=f7e97]: "01"
+          - generic [ref=f7e99]: The studio
+        - img "A deep red manicure with a gloss finish" [ref=f7e101]
+        - paragraph [ref=f7e102]: A finished set, photographed at the studio.
+      - generic [ref=f7e103]:
+        - heading "A slower kind of beauty." [level=2] [ref=f7e104]
+        - generic [ref=f7e105]:
+          - paragraph [ref=f7e106]: Looking for an experience that leaves you feeling fully rejuvenated? Our studio is here to pamper you in style — a chance to kick back, relax and indulge in some much-needed self-care.
+          - paragraph [ref=f7e107]: Our team provides the ultimate manicure and pedicure experience, complete with a tranquil atmosphere and top-of-the-line service. We also offer event services for birthdays, bridal parties, baby showers and graduations.
+        - blockquote [ref=f7e108]: Look and feel your very best.
+        - list [ref=f7e109]:
+          - listitem [ref=f7e110]: Manicure
+          - listitem [ref=f7e111]: Pedicure
+          - listitem [ref=f7e112]: Nail Art
+          - listitem [ref=f7e113]: Events
+    - generic [ref=f7e115]:
+      - generic [ref=f7e116]:
+        - generic [ref=f7e117]:
+          - generic [ref=f7e118]:
+            - generic [ref=f7e119]: "02"
+            - generic [ref=f7e121]: Services
+          - heading "Three ways to be looked after." [level=2] [ref=f7e122]
+        - paragraph [ref=f7e123]: Every service begins with a conversation. Call the studio to talk through what you have in mind.
+      - generic [ref=f7e124]:
+        - link "01 Manicure Shaped, softened and finished by hand. Deep red manicure with a gloss finish, photographed at Nail Studio" [ref=f7e125] [cursor=pointer]:
+          - /url: "#manicure"
+          - generic [ref=f7e126]: "01"
+          - generic [ref=f7e128]:
+            - generic [ref=f7e129]: Manicure
+            - generic [ref=f7e130]: Shaped, softened and finished by hand.
+          - img "Deep red manicure with a gloss finish, photographed at Nail Studio" [ref=f7e132]
+        - link "02 Pedicure A reset for the ground you walk on. Hand-painted floral pedicure in blue and coral, photographed at Nail Studio" [ref=f7e137] [cursor=pointer]:
+          - /url: "#pedicure"
+          - generic [ref=f7e138]: "02"
+          - generic [ref=f7e140]:
+            - generic [ref=f7e141]: Pedicure
+            - generic [ref=f7e142]: A reset for the ground you walk on.
+          - img "Hand-painted floral pedicure in blue and coral, photographed at Nail Studio" [ref=f7e144]
+        - link "03 Nail Art A small canvas, taken seriously. Blue hand-painted nail art with fine swirl detail" [ref=f7e149] [cursor=pointer]:
+          - /url: "#nail-art"
+          - generic [ref=f7e150]: "03"
+          - generic [ref=f7e152]:
+            - generic [ref=f7e153]: Nail Art
+            - generic [ref=f7e154]: A small canvas, taken seriously.
+          - img "Blue hand-painted nail art with fine swirl detail" [ref=f7e156]
+      - generic [ref=f7e161]:
+        - paragraph [ref=f7e162]: Not sure which service you need? We are happy to advise.
+        - link "Call +1 256 546 2553" [ref=f7e163] [cursor=pointer]:
+          - /url: tel:+12565462553
+    - generic [ref=f7e168]:
+      - generic [aria-hidden]: "03"
+      - generic [ref=f7e169]:
+        - generic [ref=f7e170]:
+          - generic [ref=f7e171]:
+            - generic [ref=f7e172]: "03"
+            - generic [ref=f7e174]: Manicure
+          - heading "Shaped, softened, finished by hand." [level=2] [ref=f7e175]
+        - paragraph [ref=f7e176]: A manicure uses paraffin wax, oils and lotions to exfoliate the skin, moisturise the cuticles and soften the nails. Our technicians work to strict hygiene standards and offer a range of manicure styles to suit you.
+      - generic [ref=f7e178]:
+        - figure "Manicure 01" [ref=f7e179]:
+          - img "Soft pink and white manicure with gold detail" [ref=f7e181]
+          - generic [ref=f7e182]:
+            - generic [ref=f7e183]: Manicure
+            - generic [ref=f7e184]: "01"
+        - figure "Manicure 02" [ref=f7e185]:
+          - img "Deep red glossy manicure" [ref=f7e187]
+          - generic [ref=f7e188]:
+            - generic [ref=f7e189]: Manicure
+            - generic [ref=f7e190]: "02"
+        - figure "Manicure 03" [ref=f7e191]:
+          - img "White French manicure with silver detail" [ref=f7e193]
+          - generic [ref=f7e194]:
+            - generic [ref=f7e195]: Manicure
+            - generic [ref=f7e196]: "03"
+        - figure "Manicure 04" [ref=f7e197]:
+          - img "Black French manicure" [ref=f7e199]
+          - generic [ref=f7e200]:
+            - generic [ref=f7e201]: Manicure
+            - generic [ref=f7e202]: "04"
+        - figure "Manicure 05" [ref=f7e203]:
+          - img "Lilac manicure with fine line work" [ref=f7e205]
+          - generic [ref=f7e206]:
+            - generic [ref=f7e207]: Manicure
+            - generic [ref=f7e208]: "05"
+        - figure "Manicure 06" [ref=f7e209]:
+          - img "Nude manicure with gold accent and rings" [ref=f7e211]
+          - generic [ref=f7e212]:
+            - generic [ref=f7e213]: Manicure
+            - generic [ref=f7e214]: "06"
+        - figure "Manicure 07" [ref=f7e215]:
+          - img "Almond-shaped white manicure" [ref=f7e217]
+          - generic [ref=f7e218]:
+            - generic [ref=f7e219]: Manicure
+            - generic [ref=f7e220]: "07"
+        - figure "Manicure 08" [ref=f7e221]:
+          - img "Pink glitter manicure" [ref=f7e223]
+          - generic [ref=f7e224]:
+            - generic [ref=f7e225]: Manicure
+            - generic [ref=f7e226]: "08"
+        - figure "Manicure 09" [ref=f7e227]:
+          - img "White manicure with lace detail" [ref=f7e229]
+          - generic [ref=f7e230]:
+            - generic [ref=f7e231]: Manicure
+            - generic [ref=f7e232]: "09"
+        - figure "Manicure 10" [ref=f7e233]:
+          - img "Red manicure with floral accent" [ref=f7e235]
+          - generic [ref=f7e236]:
+            - generic [ref=f7e237]: Manicure
+            - generic [ref=f7e238]: "10"
+    - generic [ref=f7e240]:
+      - generic [ref=f7e241]:
+        - generic [ref=f7e242]:
+          - generic [ref=f7e243]: "04"
+          - generic [ref=f7e245]: Pedicure
+        - heading "A reset for the ground you walk on." [level=2] [ref=f7e246]
+        - paragraph [ref=f7e247]: A pedicure addresses ingrown and brittle nails and helps prevent the build-up of germs, with thoroughly cleaned and sterile tools. Our technicians offer a range of pedicure styles to keep your feet healthy and comfortable.
+        - link "Book a pedicure →" [ref=f7e248] [cursor=pointer]:
+          - /url: "#contact"
+          - text: Book a pedicure
+          - generic [ref=f7e249]: →
+      - generic [ref=f7e250]:
+        - generic [ref=f7e251]:
+          - figure [ref=f7e252]:
+            - img "Floral pedicure in blue and coral" [ref=f7e253]
+          - figure [ref=f7e254]:
+            - img "Nude pedicure with a soft gloss finish" [ref=f7e255]
+          - figure [ref=f7e256]:
+            - img "Striped pedicure in pink, blue and violet" [ref=f7e257]
+          - figure [ref=f7e258]:
+            - img "Sheer nude pedicure with a clean square shape" [ref=f7e259]
+        - generic [ref=f7e260]:
+          - figure [ref=f7e261]:
+            - img "Blue pedicure with gem detail" [ref=f7e262]
+          - figure [ref=f7e263]:
+            - img "Pink and white pedicure with silver detail" [ref=f7e264]
+          - figure [ref=f7e265]:
+            - img "White pedicure with green leaf detail" [ref=f7e266]
+          - figure [ref=f7e267]:
+            - img "Pale yellow pedicure with daisy detail" [ref=f7e268]
+    - generic [ref=f7e270]:
+      - generic [aria-hidden]: "05"
+      - generic [ref=f7e271]:
+        - generic [ref=f7e272]:
+          - generic [ref=f7e273]:
+            - generic [ref=f7e274]: "05"
+            - generic [ref=f7e276]: Nail Art
+          - heading "A small canvas, taken seriously." [level=2] [ref=f7e277]
+        - paragraph [ref=f7e278]: Nail art is a form of self-expression — painted, sculpted and finished by hand. From a single accent to a full set, our technicians work with your ideas and a wide range of styles.
+      - generic [ref=f7e280]:
+        - figure "Nail Art 01" [ref=f7e281]:
+          - img "Blue hand-painted swirl nail art" [ref=f7e283]
+          - generic [ref=f7e284]:
+            - generic [ref=f7e285]: Nail Art
+            - generic [ref=f7e286]: "01"
+        - figure "Nail Art 02" [ref=f7e287]:
+          - img "Blue floral nail art" [ref=f7e289]
+          - generic [ref=f7e290]:
+            - generic [ref=f7e291]: Nail Art
+            - generic [ref=f7e292]: "02"
+        - figure "Nail Art 03" [ref=f7e293]:
+          - img "Purple and white floral nail art" [ref=f7e295]
+          - generic [ref=f7e296]:
+            - generic [ref=f7e297]: Nail Art
+            - generic [ref=f7e298]: "03"
+        - figure "Nail Art 04" [ref=f7e299]:
+          - img "Pale blue nail art with fine detail" [ref=f7e301]
+          - generic [ref=f7e302]:
+            - generic [ref=f7e303]: Nail Art
+            - generic [ref=f7e304]: "04"
+        - figure "Nail Art 05" [ref=f7e305]:
+          - img "Rose gold chrome nail art" [ref=f7e307]
+          - generic [ref=f7e308]:
+            - generic [ref=f7e309]: Nail Art
+            - generic [ref=f7e310]: "05"
+        - figure "Nail Art 06" [ref=f7e311]:
+          - img "Pastel ombré nail art" [ref=f7e313]
+          - generic [ref=f7e314]:
+            - generic [ref=f7e315]: Nail Art
+            - generic [ref=f7e316]: "06"
+        - figure "Nail Art 07" [ref=f7e317]:
+          - img "Gold sculpted nail art" [ref=f7e319]
+          - generic [ref=f7e320]:
+            - generic [ref=f7e321]: Nail Art
+            - generic [ref=f7e322]: "07"
+        - figure "Nail Art 08" [ref=f7e323]:
+          - img "Nude nail art with hand-painted flowers" [ref=f7e325]
+          - generic [ref=f7e326]:
+            - generic [ref=f7e327]: Nail Art
+            - generic [ref=f7e328]: "08"
+        - figure "Nail Art 09" [ref=f7e329]:
+          - img "Dark chrome nail art" [ref=f7e331]
+          - generic [ref=f7e332]:
+            - generic [ref=f7e333]: Nail Art
+            - generic [ref=f7e334]: "09"
+        - figure "Nail Art 10" [ref=f7e335]:
+          - img "Rose gold nail art with crystal detail" [ref=f7e337]
+          - generic [ref=f7e338]:
+            - generic [ref=f7e339]: Nail Art
+            - generic [ref=f7e340]: "10"
+    - generic [ref=f7e342]:
+      - generic [ref=f7e343]:
+        - generic [ref=f7e344]:
+          - generic [ref=f7e345]:
+            - generic [ref=f7e346]: "06"
+            - generic [ref=f7e348]: Reviews
+          - heading "In their words." [level=2] [ref=f7e349]
+        - paragraph [ref=f7e350]: Guests write to us after their appointments. These are their reviews, published as they were left.
+      - list [ref=f7e351]:
+        - listitem [ref=f7e352]:
+          - generic "5 out of 5 stars" [ref=f7e353]
+          - blockquote [ref=f7e364]: Good job and every one so nice. Thank you. 🙏💕💐
+          - generic [ref=f7e365]: Hien Tuyet
+        - listitem [ref=f7e366]:
+          - generic "5 out of 5 stars" [ref=f7e367]
+          - blockquote [ref=f7e378]: Awesome pedicure and Christine did my nails and even offered me sparkles!
+          - generic [ref=f7e379]: Bailey Wright
+        - listitem [ref=f7e380]:
+          - generic "5 out of 5 stars" [ref=f7e381]
+          - blockquote [ref=f7e392]: I absolutely loved Mrs Christine she was the sweetest and I highly recommend her 💕💕
+          - generic [ref=f7e393]: Dionisia Mason
+        - listitem [ref=f7e394]:
+          - generic "5 out of 5 stars" [ref=f7e395]
+          - blockquote [ref=f7e406]: they do great on your nail!
+          - generic [ref=f7e407]: Emma Evans
+        - listitem [ref=f7e408]:
+          - generic "5 out of 5 stars" [ref=f7e409]
+          - blockquote [ref=f7e420]: The stylist was very professional and knowledgeable, correcting a poor job done in another state. I will definitely come back here every time in Alabama!
+          - generic [ref=f7e421]: Rosa Ralls
+        - listitem [ref=f7e422]:
+          - generic "5 out of 5 stars" [ref=f7e423]
+          - blockquote [ref=f7e434]: I had an amazing time here! I've lived in the area for about 5 years and I finally found my place that I will come back every time thanks Christine
+          - generic [ref=f7e435]: Jody Helbert
+        - listitem [ref=f7e436]:
+          - generic "5 out of 5 stars" [ref=f7e437]
+          - blockquote [ref=f7e448]: Christine is the best hands down! This place is wonderful!!!
+          - generic [ref=f7e449]: Elizabeth Nix
+        - listitem [ref=f7e450]:
+          - generic "5 out of 5 stars" [ref=f7e451]
+          - blockquote [ref=f7e462]: My wife and I came in for pedicures for the both of us and for her to get her fingernails done. Service was very prompt, and the team took very good care of us! I HIGHLY RECOMMEND!!
+          - generic [ref=f7e463]: Richard Payne
+        - listitem [ref=f7e464]:
+          - generic "5 out of 5 stars" [ref=f7e465]
+          - blockquote [ref=f7e476]: Christine is the absolute best!! She did a fantastic job on my nails! Best nail place around!
+          - generic [ref=f7e477]: Maddie Bartlett
+    - generic [ref=f7e478]:
+      - generic [ref=f7e480]:
+        - generic [ref=f7e481]:
+          - generic [ref=f7e482]:
+            - generic [ref=f7e483]: "07"
+            - generic [ref=f7e485]: In the chair
+          - heading "The people who sit here." [level=2] [ref=f7e486]
+        - paragraph [ref=f7e487]: A few guests, photographed at the studio. Swipe to look through.
+      - generic [ref=f7e488]:
+        - figure "Nail Studio 01" [ref=f7e489]:
+          - img "A guest at Nail Studio in Gadsden" [ref=f7e491]
+          - generic [ref=f7e492]:
+            - generic [ref=f7e493]: Nail Studio
+            - generic [ref=f7e494]: "01"
+        - figure "Nail Studio 02" [ref=f7e495]:
+          - img "A young guest seated in a pedicure chair" [ref=f7e497]
+          - generic [ref=f7e498]:
+            - generic [ref=f7e499]: Nail Studio
+            - generic [ref=f7e500]: "02"
+        - figure "Nail Studio 03" [ref=f7e501]:
+          - img "Two guests together at the studio" [ref=f7e503]
+          - generic [ref=f7e504]:
+            - generic [ref=f7e505]: Nail Studio
+            - generic [ref=f7e506]: "03"
+        - figure "Nail Studio 04" [ref=f7e507]:
+          - img "Guests being looked after in the studio" [ref=f7e509]
+          - generic [ref=f7e510]:
+            - generic [ref=f7e511]: Nail Studio
+            - generic [ref=f7e512]: "04"
+        - figure "Nail Studio 05" [ref=f7e513]:
+          - img "A guest smiling during an appointment" [ref=f7e515]
+          - generic [ref=f7e516]:
+            - generic [ref=f7e517]: Nail Studio
+            - generic [ref=f7e518]: "05"
+        - figure "Nail Studio 06" [ref=f7e519]:
+          - img "A young guest in the studio" [ref=f7e521]
+          - generic [ref=f7e522]:
+            - generic [ref=f7e523]: Nail Studio
+            - generic [ref=f7e524]: "06"
+        - figure "Nail Studio 07" [ref=f7e525]:
+          - img "A guest with freshly finished nails" [ref=f7e527]
+          - generic [ref=f7e528]:
+            - generic [ref=f7e529]: Nail Studio
+            - generic [ref=f7e530]: "07"
+        - figure "Nail Studio 08" [ref=f7e531]:
+          - img "A guest and her daughter at the studio" [ref=f7e533]
+          - generic [ref=f7e534]:
+            - generic [ref=f7e535]: Nail Studio
+            - generic [ref=f7e536]: "08"
+        - figure "Nail Studio 09" [ref=f7e537]:
+          - img "A guest and her daughter showing their nails" [ref=f7e539]
+          - generic [ref=f7e540]:
+            - generic [ref=f7e541]: Nail Studio
+            - generic [ref=f7e542]: "09"
+    - generic [ref=f7e543]:
+      - generic [ref=f7e545]:
+        - generic [ref=f7e546]:
+          - generic [ref=f7e547]:
+            - generic [ref=f7e548]:
+              - generic [ref=f7e549]: "08"
+              - generic [ref=f7e551]: Visit
+            - heading "Come and sit with us." [level=2] [ref=f7e552]
+            - paragraph [ref=f7e553]: Tell us what you have in mind and we will find the right service for you. Appointments are made by phone.
+          - generic [ref=f7e554]:
+            - link "+1 256 546 2553" [ref=f7e555] [cursor=pointer]:
+              - /url: tel:+12565462553
+            - generic [ref=f7e563]:
+              - generic [ref=f7e564]:
+                - paragraph [ref=f7e565]: Studio
+                - paragraph [ref=f7e566]: "1001 Rainbow Dr #35Gadsden, AL 35901"
+              - generic [ref=f7e567]:
+                - paragraph [ref=f7e568]: Directions
+                - link "Open in Google Maps" [ref=f7e569] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/dir//Nail+Studio+1001+Rainbow+Dr+%2335+Gadsden,+AL+35901+United+States/@33.9950333,-86.0083732,18z/data=!4m8!4m7!1m0!1m5!1m1!1s0x888a396362bd9259:0x11749f1074b66395!2m2!1d-86.0077295!2d33.9943662?entry=ttu
+        - generic [ref=f7e576]:
+          - img "A close-up of a red manicure finished at Nail Studio" [ref=f7e578]
+          - paragraph [ref=f7e579]: Red, glossed and finished by hand.
+      - link [ref=f7e580] [cursor=pointer]:
+        - /url: https://www.google.com/maps/dir//Nail+Studio+1001+Rainbow+Dr+%2335+Gadsden,+AL+35901+United+States/@33.9950333,-86.0083732,18z/data=!4m8!4m7!1m0!1m5!1m1!1s0x888a396362bd9259:0x11749f1074b66395!2m2!1d-86.0077295!2d33.9943662?entry=ttu
+        - img "Map showing Nail Studio at 1001 Rainbow Dr in Gadsden, Alabama" [ref=f7e581]
+        - generic [ref=f7e583]: "1001 Rainbow Dr #35, Gadsden, AL 35901"
+  - contentinfo [ref=f7e588]:
+    - generic [ref=f7e589]:
+      - generic [ref=f7e590]:
+        - generic [ref=f7e591]:
+          - link "Nail Studio, back to top" [ref=f7e592] [cursor=pointer]:
+            - /url: /
+            - img "Nail Studio crest" [ref=f7e593]
+            - generic [ref=f7e594]: Nail Studio
+          - paragraph [ref=f7e595]: Manicure, pedicure and nail art in Gadsden, Alabama.
+        - navigation "Footer" [ref=f7e596]:
+          - link "Services" [ref=f7e597] [cursor=pointer]:
+            - /url: "#services"
+          - link "Manicure" [ref=f7e598] [cursor=pointer]:
+            - /url: "#manicure"
+          - link "Pedicure" [ref=f7e599] [cursor=pointer]:
+            - /url: "#pedicure"
+          - link "Nail Art" [ref=f7e600] [cursor=pointer]:
+            - /url: "#nail-art"
+          - link "Reviews" [ref=f7e601] [cursor=pointer]:
+            - /url: "#reviews"
+          - link "Visit" [ref=f7e602] [cursor=pointer]:
+            - /url: "#contact"
+        - generic [ref=f7e603]:
+          - link "+1 256 546 2553" [ref=f7e604] [cursor=pointer]:
+            - /url: tel:+12565462553
+          - paragraph [ref=f7e605]: "1001 Rainbow Dr #35Gadsden, AL 35901"
+      - generic [ref=f7e606]:
+        - paragraph [ref=f7e607]: Copyright © 2026 NailStudio. All rights reserved.
+        - paragraph [ref=f7e608]:
+          - text: Designed and built by
+          - link "NetCode" [ref=f7e609] [cursor=pointer]:
+            - /url: https://netcodedev.com
+  - alert [ref=f7e610]

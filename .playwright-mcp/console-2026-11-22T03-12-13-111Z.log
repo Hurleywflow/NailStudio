@@ -1,0 +1,12 @@
+[ 1536669ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:3002/?_rsc=1wtp7#contact:1
+[ 1536669ms] [ERROR] Failed to fetch RSC payload for http://localhost:3002/#contact. Falling back to browser navigation. TypeError: Failed to fetch
+    at s (http://localhost:3002/_next/static/chunks/117-d63613886d3df935.js:1:45252)
+    at http://localhost:3002/_next/static/chunks/117-d63613886d3df935.js:1:58778
+    at Object.u [as task] (http://localhost:3002/_next/static/chunks/117-d63613886d3df935.js:1:31684)
+    at c.s (http://localhost:3002/_next/static/chunks/117-d63613886d3df935.js:1:32389)
+    at c.enqueue (http://localhost:3002/_next/static/chunks/117-d63613886d3df935.js:1:31814)
+    at s (http://localhost:3002/_next/static/chunks/117-d63613886d3df935.js:1:58741)
+    at i (http://localhost:3002/_next/static/chunks/117-d63613886d3df935.js:1:58281)
+    at a (http://localhost:3002/_next/static/chunks/117-d63613886d3df935.js:1:65066)
+    at f (http://localhost:3002/_next/static/chunks/117-d63613886d3df935.js:1:74842)
+    at Object.action (http://localhost:3002/_next/static/chunks/117-d63613886d3df935.js:2:7082) @ http://localhost:3002/_next/static/chunks/117-d63613886d3df935.js:1
