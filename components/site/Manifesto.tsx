@@ -17,6 +17,7 @@ export function Manifesto(): JSX.Element {
 							src='/Images/manicure/13.webp'
 							alt='A deep red manicure with a gloss finish'
 							fill
+							priority
 							sizes='(max-width: 1024px) 90vw, 30vw'
 							className='object-cover object-center'
 						/>
