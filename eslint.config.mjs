@@ -7,6 +7,7 @@ import hooksPlugin from "eslint-plugin-react-hooks";
 import reactRecommended from "eslint-plugin-react/configs/recommended.js";
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import importPlugin from "eslint-plugin-import";
+import nodePlugin from "eslint-plugin-node";
 import tailwindcss from "eslint-plugin-tailwindcss";
 import eslintConfigPrettier from "eslint-config-prettier";
 import { FlatCompat } from "@eslint/eslintrc";
@@ -226,6 +227,9 @@ export default tseslint.config(
 	// Node specific rules (for config files)
 	{
 		files: ["*.cjs", "*.mjs", "*.js"],
+		plugins: {
+			node: nodePlugin,
+		},
 		languageOptions: {
 			ecmaVersion: "latest",
 			sourceType: "commonjs",
